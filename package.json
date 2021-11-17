@@ -19,5 +19,8 @@
   "homepage": "https://github.com/ryanmcgranahan22/Maia-and-Ryan-s-Data-Journalism-Project#readme",
   "dependencies": {
     "jsdoc": "^3.6.7"
-  }
+  },
+  "documentation":
+  {"jsdoc ./build/js/*.js -d docs"
+}
 }
