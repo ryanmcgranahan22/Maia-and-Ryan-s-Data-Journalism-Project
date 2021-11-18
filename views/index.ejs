@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>MICRO TESTER</title>
+  <title><%= data.state %></title>
   <meta name="author" content="Maia and Ryan">
   <meta content="text/html" http-equiv="Content-type" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -19,17 +19,26 @@
     <table>
       <tr>
         <% for(let i in data){ %>
+          <%if(i !== "number"){%>
           <td><%= i %></td>
-          <%}%>
+          <%}}%>
       </tr>
       <tr>
         <% for(let i in data){ %>
+          <%if(i !== "number"){%>
           <td><%= data[i] %></td>
-          <%}%>
+          <%}}%>
       </tr>
     </table>
   </section>
-
+  <% let prev = "micro"+(data["number"]-1)+".html" %>
+  <% let next = "micro"+(data["number"]+1)+".html" %>
+  <% if(data["number"]>1){ %>
+  <a href=<%=prev%>>previous page</a>
+  <%}%>
+  <% if(data["number"]<40){ %>
+  <a href=<%=next%>>next page</a>
+  <%}%>
   <%- include ('global/footer');  %>
 
 </body>

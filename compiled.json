@@ -13,7 +13,8 @@
     "fireBurn": "Fire/Burn",
     "motorVehicle": "Motor vehicle",
     "other": "Other",
-    "unknown": "Unknown"
+    "unknown": "Unknown",
+    "number": 0
   },
   {
     "state": "Alabama",
@@ -24,7 +25,8 @@
     "cutPierce": "52",
     "struckByAgainst": "44",
     "poisoning": "90",
-    "hangingSuffocation": "193"
+    "hangingSuffocation": "193",
+    "number": 1
   },
   {
     "state": "Alaska",
@@ -35,7 +37,8 @@
     "cutPierce": "12",
     "poisoning": "20",
     "hangingSuffocation": "57",
-    "drowning": "13"
+    "drowning": "13",
+    "number": 2
   },
   {
     "state": "Arizona",
@@ -50,7 +53,8 @@
     "fall": "25",
     "drowning": "13",
     "motorVehicle": "18",
-    "unknown": "14"
+    "unknown": "14",
+    "number": 3
   },
   {
     "state": "California",
@@ -67,7 +71,8 @@
     "fireBurn": "25",
     "motorVehicle": "83",
     "other": "13",
-    "unknown": "326"
+    "unknown": "326",
+    "number": 4
   },
   {
     "state": "Colorado",
@@ -80,7 +85,8 @@
     "poisoning": "181",
     "hangingSuffocation": "390",
     "fall": "21",
-    "motorVehicle": "36"
+    "motorVehicle": "36",
+    "number": 5
   },
   {
     "state": "Connecticut",
@@ -93,7 +99,8 @@
     "poisoning": "88",
     "hangingSuffocation": "162",
     "fall": "17",
-    "motorVehicle": "12"
+    "motorVehicle": "12",
+    "number": 6
   },
   {
     "state": "Delaware",
@@ -102,7 +109,8 @@
     "ratio": "0.0001674988187",
     "firearm": "98",
     "poisoning": "12",
-    "hangingSuffocation": "41"
+    "hangingSuffocation": "41",
+    "number": 7
   },
   {
     "state": "District of Columbia",
@@ -111,7 +119,8 @@
     "ratio": "0.0002249254401",
     "firearm": "100",
     "cutPierce": "15",
-    "hangingSuffocation": "25"
+    "hangingSuffocation": "25",
+    "number": 8
   },
   {
     "state": "Georgia",
@@ -127,7 +136,8 @@
     "drowning": "15",
     "fireBurn": "11",
     "motorVehicle": "27",
-    "unknown": "129"
+    "unknown": "129",
+    "number": 9
   },
   {
     "state": "Illinois",
@@ -143,7 +153,8 @@
     "drowning": "34",
     "motorVehicle": "58",
     "other": "12",
-    "unknown": "26"
+    "unknown": "26",
+    "number": 10
   },
   {
     "state": "Indiana",
@@ -157,7 +168,8 @@
     "hangingSuffocation": "339",
     "fireBurn": "13",
     "motorVehicle": "11",
-    "unknown": "109"
+    "unknown": "109",
+    "number": 11
   },
   {
     "state": "Iowa",
@@ -171,7 +183,8 @@
     "hangingSuffocation": "160",
     "drowning": "11",
     "fireBurn": "11",
-    "motorVehicle": "18"
+    "motorVehicle": "18",
+    "number": 12
   },
   {
     "state": "Kansas",
@@ -182,7 +195,8 @@
     "cutPierce": "23",
     "struckByAgainst": "17",
     "poisoning": "88",
-    "hangingSuffocation": "168"
+    "hangingSuffocation": "168",
+    "number": 13
   },
   {
     "state": "Kentucky",
@@ -197,7 +211,8 @@
     "fall": "12",
     "fireBurn": "11",
     "motorVehicle": "11",
-    "unknown": "12"
+    "unknown": "12",
+    "number": 14
   },
   {
     "state": "Louisiana",
@@ -212,7 +227,8 @@
     "fall": "11",
     "drowning": "15",
     "fireBurn": "13",
-    "motorVehicle": "15"
+    "motorVehicle": "15",
+    "number": 15
   },
   {
     "state": "Maine",
@@ -223,7 +239,8 @@
     "cutPierce": "11",
     "poisoning": "42",
     "hangingSuffocation": "60",
-    "drowning": "10"
+    "drowning": "10",
+    "number": 16
   },
   {
     "state": "Maryland",
@@ -239,7 +256,8 @@
     "drowning": "12",
     "motorVehicle": "17",
     "other": "43",
-    "unknown": "31"
+    "unknown": "31",
+    "number": 17
   },
   {
     "state": "Massachusetts",
@@ -254,7 +272,8 @@
     "fall": "30",
     "drowning": "13",
     "fireBurn": "11",
-    "motorVehicle": "22"
+    "motorVehicle": "22",
+    "number": 18
   },
   {
     "state": "Michigan",
@@ -269,7 +288,8 @@
     "fall": "17",
     "drowning": "23",
     "fireBurn": "27",
-    "motorVehicle": "32"
+    "motorVehicle": "32",
+    "number": 19
   },
   {
     "state": "Minnesota",
@@ -283,7 +303,8 @@
     "hangingSuffocation": "231",
     "fall": "26",
     "motorVehicle": "11",
-    "unknown": "11"
+    "unknown": "11",
+    "number": 20
   },
   {
     "state": "Missouri",
@@ -297,7 +318,8 @@
     "hangingSuffocation": "317",
     "fall": "17",
     "motorVehicle": "19",
-    "unknown": "18"
+    "unknown": "18",
+    "number": 21
   },
   {
     "state": "Nebraska",
@@ -306,7 +328,8 @@
     "ratio": "0.0001606827045",
     "firearm": "170",
     "poisoning": "34",
-    "hangingSuffocation": "79"
+    "hangingSuffocation": "79",
+    "number": 22
   },
   {
     "state": "Nevada",
@@ -319,7 +342,8 @@
     "poisoning": "113",
     "hangingSuffocation": "149",
     "fall": "25",
-    "unknown": "31"
+    "unknown": "31",
+    "number": 23
   },
   {
     "state": "New Hampshire",
@@ -329,7 +353,8 @@
     "firearm": "142",
     "cutPierce": "10",
     "poisoning": "47",
-    "hangingSuffocation": "83"
+    "hangingSuffocation": "83",
+    "number": 24
   },
   {
     "state": "New Jersey",
@@ -345,7 +370,8 @@
     "drowning": "20",
     "fireBurn": "11",
     "motorVehicle": "30",
-    "unknown": "11"
+    "unknown": "11",
+    "number": 25
   },
   {
     "state": "New Mexico",
@@ -357,7 +383,8 @@
     "struckByAgainst": "29",
     "poisoning": "75",
     "hangingSuffocation": "149",
-    "motorVehicle": "12"
+    "motorVehicle": "12",
+    "number": 26
   },
   {
     "state": "New York",
@@ -373,7 +400,8 @@
     "drowning": "33",
     "fireBurn": "15",
     "motorVehicle": "75",
-    "unknown": "860"
+    "unknown": "860",
+    "number": 27
   },
   {
     "state": "North Carolina",
@@ -386,7 +414,8 @@
     "poisoning": "238",
     "hangingSuffocation": "363",
     "fall": "23",
-    "motorVehicle": "22"
+    "motorVehicle": "22",
+    "number": 28
   },
   {
     "state": "Ohio",
@@ -402,7 +431,8 @@
     "drowning": "15",
     "fireBurn": "19",
     "motorVehicle": "64",
-    "unknown": "77"
+    "unknown": "77",
+    "number": 29
   },
   {
     "state": "Oklahoma",
@@ -414,7 +444,8 @@
     "struckByAgainst": "38",
     "poisoning": "116",
     "hangingSuffocation": "235",
-    "motorVehicle": "10"
+    "motorVehicle": "10",
+    "number": 30
   },
   {
     "state": "Oregon",
@@ -428,7 +459,8 @@
     "hangingSuffocation": "240",
     "fall": "20",
     "drowning": "21",
-    "motorVehicle": "15"
+    "motorVehicle": "15",
+    "number": 31
   },
   {
     "state": "Pennsylvania",
@@ -444,7 +476,8 @@
     "drowning": "28",
     "fireBurn": "23",
     "motorVehicle": "30",
-    "unknown": "22"
+    "unknown": "22",
+    "number": 32
   },
   {
     "state": "Rhode Island",
@@ -453,7 +486,8 @@
     "ratio": "0.0001295734951",
     "firearm": "36",
     "poisoning": "23",
-    "hangingSuffocation": "49"
+    "hangingSuffocation": "49",
+    "number": 33
   },
   {
     "state": "South Carolina",
@@ -466,7 +500,8 @@
     "poisoning": "82",
     "hangingSuffocation": "193",
     "fall": "14",
-    "motorVehicle": "10"
+    "motorVehicle": "10",
+    "number": 34
   },
   {
     "state": "Utah",
@@ -479,7 +514,8 @@
     "poisoning": "134",
     "hangingSuffocation": "186",
     "fall": "12",
-    "motorVehicle": "17"
+    "motorVehicle": "17",
+    "number": 35
   },
   {
     "state": "Vermont",
@@ -488,7 +524,8 @@
     "ratio": "0.0002602590775",
     "firearm": "77",
     "poisoning": "24",
-    "hangingSuffocation": "32"
+    "hangingSuffocation": "32",
+    "number": 36
   },
   {
     "state": "Virginia",
@@ -502,7 +539,8 @@
     "hangingSuffocation": "316",
     "fall": "24",
     "drowning": "17",
-    "motorVehicle": "20"
+    "motorVehicle": "20",
+    "number": 37
   },
   {
     "state": "Washington",
@@ -517,7 +555,8 @@
     "fall": "56",
     "drowning": "28",
     "motorVehicle": "25",
-    "unknown": "16*"
+    "unknown": "16*",
+    "number": 38
   },
   {
     "state": "West Virginia",
@@ -528,7 +567,8 @@
     "cutPierce": "20",
     "struckByAgainst": "25",
     "poisoning": "47",
-    "hangingSuffocation": "86"
+    "hangingSuffocation": "86",
+    "number": 39
   },
   {
     "state": "Wisconsin",
@@ -540,6 +580,7 @@
     "struckByAgainst": "13",
     "poisoning": "163",
     "hangingSuffocation": "288",
-    "fall": "13"
+    "fall": "13",
+    "number": 40
   }
 ]
