@@ -14,6 +14,8 @@ states.forEach(function(state) {
   data['population'] = state_info[2];
   data['ratio'] = state_info[3];
 
+  // continue making like data['gun']= state_info[4] etc for all columns of data
+
   state_data.push(data);
 });
 
