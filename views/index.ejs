@@ -12,42 +12,20 @@
 <body>
   <header>
     <h1><%= data.state %> DATA</h1>
+    <h2>This is the microdata for <%= data.state %> </h2>
+
   </header>
   <section id="data info">
     <table>
       <tr>
-        <th>State</th>
-        <th>Total</th>
-        <th>Population</th>
-        <th>Ratio</th>
-        <th>Firearm</th>
-        <th>Cut/Pierce</th>
-        <th>Struck by/against</th>
-        <th>Poisoning</th>
-        <th>Hanging/Suffocation</th>
-        <th>Fall</th>
-        <th>Drowning</th>
-        <th>Fire/Burn</th>
-        <th>Motor vehicle</th>
-        <th>Other</th>
-        <th>Unknown</th>
+        <% for(let i in data){ %>
+          <td><%= i %></td>
+          <%}%>
       </tr>
       <tr>
-        <td><%= data.state %></td>
-        <td><%= data.total %></td>
-        <td><%= data.population %></td>
-        <td><%= data.ratio %></td>
-        <td><%= data.firearm %></td>
-        <td><%= data.cutPierce %></td>
-        <td><%= data.struckByAgainst %></td>
-        <td><%= data.poisoning %></td>
-        <td><%= data.hangingSuffocation %></td>
-        <td><%= data.fall %></td>
-        <td><%= data.drowning %></td>
-        <td><%= data.fireBurn %></td>
-        <td><%= data.motorVehicle %></td>
-        <td><%= data.other %></td>
-        <td><%= data.unknown %></td>
+        <% for(let i in data){ %>
+          <td><%= data[i] %></td>
+          <%}%>
       </tr>
     </table>
   </section>
