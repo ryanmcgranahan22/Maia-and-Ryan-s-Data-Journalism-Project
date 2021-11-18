@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,6 +7,7 @@
   <meta name="author" content="Maia and Ryan">
   <meta content="text/html" http-equiv="Content-type" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
 </head>
 
 <body>
@@ -50,6 +51,23 @@
         <td><%= data.unknown %></td>
       </tr>
     </table>
+
+  <script>
+    let pie = [{
+      values: [5],
+      labels: ['State'],
+      type: 'pie'
+    }];
+
+    let layout = {
+      height: 300,
+      width: 300
+    };
+
+    Plotly.newPlot('myDiv', pie, layout);
+
+    </script>
+
   </section>
 
   <%- include ('global/footer');  %>

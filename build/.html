@@ -20,14 +20,54 @@
         <th>Total</th>
         <th>Population</th>
         <th>Ratio</th>
+        <th>Firearm</th>
+        <th>Cut/Pierce</th>
+        <th>Struck by/against</th>
+        <th>Poisoning</th>
+        <th>Hanging/Suffocation</th>
+        <th>Fall</th>
+        <th>Drowning</th>
+        <th>Fire/Burn</th>
+        <th>Motor vehicle</th>
+        <th>Other</th>
+        <th>Unknown</th>
       </tr>
       <tr>
         <td></td>
         <td>TOTAL</td>
         <td>Population</td>
         <td>Ratio</td>
+        <td>Firearm</td>
+        <td>Cut/Pierce</td>
+        <td>Struck by/against</td>
+        <td>Poisoning</td>
+        <td>Hanging/Suffocation</td>
+        <td>Fall</td>
+        <td>Drowning</td>
+        <td>Fire/Burn</td>
+        <td>Motor vehicle</td>
+        <td>Other</td>
+        <td>Unknown</td>
       </tr>
     </table>
+
+    <script>
+
+    var pie = [{
+      values: [5],
+      labels: ['State'],
+      type: 'pie'
+    }];
+
+    var layout = {
+      height: 300,
+      width: 300
+    };
+
+    Plotly.newPlot('myDiv', pie, layout);
+
+    </script>
+
   </section>
 
   <footer>
