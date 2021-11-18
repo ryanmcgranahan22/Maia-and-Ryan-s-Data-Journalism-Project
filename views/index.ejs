@@ -20,6 +20,17 @@
         <th>Total</th>
         <th>Population</th>
         <th>Ratio</th>
+        <th>Firearm</th>
+        <th>Cut/Pierce</th>
+        <th>Struck by/against</th>
+        <th>Poisoning</th>
+        <th>Hanging/Suffocation</th>
+        <th>Fall</th>
+        <th>Drowning</th>
+        <th>Fire/Burn</th>
+        <th>Motor vehicle</th>
+        <th>Other</th>
+        <th>Unknown</th>
       </tr>
       <% for(let i=1; i<data.length; i++){ %>
       <tr>
@@ -27,6 +38,17 @@
         <td><%= data[i].total %></td>
         <td><%= data[i].population %></td>
         <td><%= data[i].ratio %></td>
+        <td><%= data[i].firearm %></td>
+        <td><%= data[i].cutPierce %></td>
+        <td><%= data[i].struckByAgainst %></td>
+        <td><%= data[i].poisoning %></td>
+        <td><%= data[i].hangingSuffocation %></td>
+        <td><%= data[i].fall %></td>
+        <td><%= data[i].drowning %></td>
+        <td><%= data[i].fireBurn %></td>
+        <td><%= data[i].motorVehicle %></td>
+        <td><%= data[i].other %></td>
+        <td><%= data[i].unknown %></td>
       </tr>
       <%}%>
     </table>
