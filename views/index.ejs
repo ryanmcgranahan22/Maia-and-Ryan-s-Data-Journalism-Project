@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>MICRO TESTER</title>
+  <meta name="author" content="Maia and Ryan">
+  <meta content="text/html" http-equiv="Content-type" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body>
+  <header>
+    <h1>MICRO DATA</h1>
+  </header>
+  <section id="data info">
+    <table>
+      <tr>
+        <th>State</th>
+        <th>Total</th>
+        <th>Population</th>
+        <th>Ratio</th>
+      </tr>
+      <% for(let i=1; i<data.length; i++){ %>
+      <tr>
+        <td><%= data[i].state %></td>
+        <td><%= data[i].total %></td>
+        <td><%= data[i].population %></td>
+        <td><%= data[i].ratio %></td>
+      </tr>
+      <%}%>
+    </table>
+  </section>
+
+  <%- include ('global/footer');  %>
+
+</body>
+
+</html>

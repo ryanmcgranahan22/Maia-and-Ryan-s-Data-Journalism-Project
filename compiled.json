@@ -1,0 +1,248 @@
+[
+  {
+    "state": "",
+    "total": "TOTAL",
+    "population": "Population",
+    "ratio": "Ratio"
+  },
+  {
+    "state": "Alabama",
+    "total": "1421",
+    "population": "4887871",
+    "ratio": "0.0002907196201"
+  },
+  {
+    "state": "Alaska",
+    "total": "279",
+    "population": "737438",
+    "ratio": "0.0003783368907"
+  },
+  {
+    "state": "Arizona",
+    "total": "1975",
+    "population": "7171646",
+    "ratio": "0.0002753900569"
+  },
+  {
+    "state": "California",
+    "total": "3524",
+    "population": "21362199",
+    "ratio": "0.0001649642904"
+  },
+  {
+    "state": "Colorado",
+    "total": "1594",
+    "population": "5695564",
+    "ratio": "0.000279866928"
+  },
+  {
+    "state": "Connecticut",
+    "total": "518",
+    "population": "3572665",
+    "ratio": "0.0001449898045"
+  },
+  {
+    "state": "Delaware",
+    "total": "162",
+    "population": "967171",
+    "ratio": "0.0001674988187"
+  },
+  {
+    "state": "District of Columbia",
+    "total": "158",
+    "population": "702455",
+    "ratio": "0.0002249254401"
+  },
+  {
+    "state": "Georgia",
+    "total": "2524",
+    "population": "10519475",
+    "ratio": "0.0002399359284"
+  },
+  {
+    "state": "Illinois",
+    "total": "2152",
+    "population": "10962819",
+    "ratio": "0.0001962998751"
+  },
+  {
+    "state": "Indiana",
+    "total": "1699",
+    "population": "6691878",
+    "ratio": "0.0002538898647"
+  },
+  {
+    "state": "Iowa",
+    "total": "615",
+    "population": "3156145",
+    "ratio": "0.0001948579676"
+  },
+  {
+    "state": "Kansas",
+    "total": "738",
+    "population": "2911505",
+    "ratio": "0.0002534771536"
+  },
+  {
+    "state": "Kentucky",
+    "total": "1115",
+    "population": "4468402",
+    "ratio": "0.0002495299214"
+  },
+  {
+    "state": "Louisiana",
+    "total": "1403",
+    "population": "4659978",
+    "ratio": "0.0003010743828"
+  },
+  {
+    "state": "Maine",
+    "total": "300",
+    "population": "1338404",
+    "ratio": "0.0002241475668"
+  },
+  {
+    "state": "Maryland",
+    "total": "2814",
+    "population": "6042718",
+    "ratio": "0.0004656844817"
+  },
+  {
+    "state": "Massachusetts",
+    "total": "909",
+    "population": "6902149",
+    "ratio": "0.0001316981132"
+  },
+  {
+    "state": "Michigan",
+    "total": "2612",
+    "population": "9995915",
+    "ratio": "0.0002613067438"
+  },
+  {
+    "state": "Minnesota",
+    "total": "865",
+    "population": "5611179",
+    "ratio": "0.0001541565507"
+  },
+  {
+    "state": "Missouri",
+    "total": "1926",
+    "population": "6126452",
+    "ratio": "0.0003143744536"
+  },
+  {
+    "state": "Nebraska",
+    "total": "310",
+    "population": "1929268",
+    "ratio": "0.0001606827045"
+  },
+  {
+    "state": "Nevada",
+    "total": "909",
+    "population": "3034392",
+    "ratio": "0.0002995657779"
+  },
+  {
+    "state": "New Hampshire",
+    "total": "294",
+    "population": "1356458",
+    "ratio": "0.0002167409533"
+  },
+  {
+    "state": "New Jersey",
+    "total": "1092",
+    "population": "8908520",
+    "ratio": "0.0001225792837"
+  },
+  {
+    "state": "New Mexico",
+    "total": "720",
+    "population": "2095428",
+    "ratio": "0.0003436052205"
+  },
+  {
+    "state": "New York",
+    "total": "2594",
+    "population": "19542209",
+    "ratio": "0.0001327383204"
+  },
+  {
+    "state": "North Carolina",
+    "total": "2224",
+    "population": "10383620",
+    "ratio": "0.0002141834928"
+  },
+  {
+    "state": "Ohio",
+    "total": "2761",
+    "population": "11689442",
+    "ratio": "0.0002361960477"
+  },
+  {
+    "state": "Oklahoma",
+    "total": "1114",
+    "population": "3943079",
+    "ratio": "0.000282520335"
+  },
+  {
+    "state": "Oregon",
+    "total": "992",
+    "population": "4190713",
+    "ratio": "0.0002367138957"
+  },
+  {
+    "state": "Pennsylvania",
+    "total": "2455",
+    "population": "10524784",
+    "ratio": "0.0002332589438"
+  },
+  {
+    "state": "Rhode Island",
+    "total": "137",
+    "population": "1057315",
+    "ratio": "0.0001295734951"
+  },
+  {
+    "state": "South Carolina",
+    "total": "1267",
+    "population": "5084127",
+    "ratio": "0.0002492069927"
+  },
+  {
+    "state": "Utah",
+    "total": "781",
+    "population": "3161105",
+    "ratio": "0.000247065504"
+  },
+  {
+    "state": "Vermont",
+    "total": "163",
+    "population": "626299",
+    "ratio": "0.0002602590775"
+  },
+  {
+    "state": "Virginia",
+    "total": "1661",
+    "population": "8517685",
+    "ratio": "0.0001950060374"
+  },
+  {
+    "state": "Washington",
+    "total": "1570",
+    "population": "7535591",
+    "ratio": "0.0002083446408"
+  },
+  {
+    "state": "West Virginia",
+    "total": "547",
+    "population": "1805832",
+    "ratio": "0.0003029074687"
+  },
+  {
+    "state": "Wisconsin",
+    "total": "1120",
+    "population": "5813568",
+    "ratio": "0.0001926527736"
+  }
+]
