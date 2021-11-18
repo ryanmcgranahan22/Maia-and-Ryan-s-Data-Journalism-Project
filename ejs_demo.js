@@ -9,16 +9,16 @@ let index_template = fs.readFileSync('views/index.ejs', 'utf8');
   console.log(a)
 }*/
 //console.log(JSON.parse(data_info)[1])
-for(let a of JSON.parse(data_info)){
+for(let a = 1; a < JSON.parse(data_info).length; a++){
 
 // put in for loop that goes 10 times and makes 10 identical pages for now
 let index_html = ejs.render(index_template, {
   filename: __dirname + '/views/index.ejs',
-  data: a
+  data: JSON.parse(data_info)[a]
 });
 
 //only thing in here that would have to change is like build/[new name].html for each round of loop
-fs.writeFileSync('build/'+a.state+'.html', index_html, 'utf8');
+fs.writeFileSync('build/micro'+a+'.html', index_html, 'utf8');
 }
 
 //end of for loop

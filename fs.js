@@ -25,8 +25,6 @@ states.forEach(function(state) {
   data['other'] = state_info[13];
   data['unknown'] = state_info[14];
 
-  // continue making like data['gun']= state_info[4] etc for all columns of data
-
   state_data.push(data);
 });
 
