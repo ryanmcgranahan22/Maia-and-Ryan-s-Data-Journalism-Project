@@ -7,6 +7,17 @@
   <meta name="author" content="Maia and Ryan">
   <meta content="text/html" http-equiv="Content-type" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+  path {
+        stroke: white;
+        stroke-width: 0.5px;
+        fill: black;
+    }
+    </style>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
 </head>
 
 <body>
@@ -16,7 +27,7 @@
 
   </header>
   <section id="data info">
-    <table>
+    <table id="myTable">
       <tr>
         
           <td>state</td>
@@ -68,6 +79,66 @@
           
       </tr>
     </table>
+    <div id="myDiv">
+    <script>
+
+for(var i=2;i<10;i++){
+    var pie = [{
+      values: [document.getElementById("myTable").rows[1].cells[4].innerHTML, document.getElementById("myTable").rows[1].cells[5].innerHTML, document.getElementById("myTable").rows[1].cells[6].innerHTML, document.getElementById("myTable").rows[1].cells[7].innerHTML],
+      labels: ['Firearm','Cut/Pierce','Struck by/against','Poisoning','Hanging/Suffocation','Fall','Drowning','Fire/Burn','Motor vehicle','Other','Unknown'],
+      type: 'pie'
+    }];
+
+    var layout = {
+      height: 400,
+      width: 500
+    };
+
+Plotly.newPlot('myDiv', pie, layout);
+}
+
+const width = 900;
+const height = 600;
+const svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+const projection = d3.geoAlbersUsa()
+    .translate([width / 2, height / 2]) // translate to center of screen
+    .scale([1000]); // scale things down so see entire US
+
+const path = d3.geoPath().projection(projection);
+
+d3.json("https://gist.githubusercontent.com/Bradleykingz/3aa5206b6819a3c38b5d73cb814ed470/raw/a476b9098ba0244718b496697c5b350460d32f99/us-states.json", function(error, uState) {
+if (error) throw error;
+    svg.selectAll('path')
+        .data(uState.features)
+        .enter()
+        .append('path')
+        .attr("d", path)
+
+        function selectDivisionNumber(array) {
+            let arraySize = array.length,
+                halfArray = Math.round(arraySize / 2);
+            let newArr = [];
+            //Take first and last item and push them to the array
+            newArr.push(array[0])
+            newArr.push(array[arraySize - 1]);
+            //Don't mind the order, they will be sorted later.
+            //Divide the array in two
+            let firstHalf = array.slice(0, halfArray);
+            let firstHalfSelection = firstHalf[Math.round(firstHalf.length / 2)];
+            newArr.push(firstHalfSelection);
+
+            let secondHalf = array.slice(halfArray, arraySize);
+            let secondHalfSelection = secondHalf[Math.round(secondHalf.length / 2)];
+            newArr.push(secondHalfSelection);
+            return newArr;
+        }
+});
+
+    </script>
+  </div>
   </section>
 
   <footer>
