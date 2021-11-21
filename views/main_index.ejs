@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title> MACRO DATA </title>
+  <link rel="stylesheet" href="../style.css">
+
+  <meta name="author" content="Maia and Ryan">
+  <meta content="text/html" http-equiv="Content-type" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body>
+  <header>
+    <a href="../about.html">about page</a>
+
+    <h1>MACRO DATA</h1>
+    <h2>This is our macro data </h2>
+  </header>
+
+  <p> insert map here </p>
+  <section id="data info">
+    <table>
+      <tr>
+        <th>State</th>
+        <th>Percent</th>
+
+
+      </tr>
+      <% for(let i=1; i<data.length; i++){ %>
+    <tr>
+      <% let num = "micro"+(data[i]["number"])+".html" %>
+      <td>  <a href=<%=num%>> <%= data[i].state %></a> </td>
+      <td><%= data[i].ratio %></td>
+    </tr>
+    <%}%>
+
+    </table>
+  </section>
+
+    <%- include ('global/footer');  %>
+
+
+
+
+
+</body>
+
+</html>

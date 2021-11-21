@@ -5,7 +5,7 @@ const ejs = require('ejs');
 
 let data_info = fs.readFileSync('compiled.json', 'utf8');
 let index_template = fs.readFileSync('views/index.ejs', 'utf8');
-let footer_template = fs.readFileSync('views/global/footer.ejs', 'utf8');
+let macro_template = fs.readFileSync('views/main_index.ejs', 'utf8');
 /*for(let a of JSON.parse(data_info)){
   console.log(a)
 }*/
@@ -23,5 +23,11 @@ fs.writeFileSync('build/micro'+a+'.html', index_html, 'utf8');
 
 }
 
+let macro_html = ejs.render(macro_template, {
+  filename: __dirname + '/views/main_index.ejs',
+  data: JSON.parse(data_info)
+});
+
+fs.writeFileSync('build/macro.html', macro_html, 'utf8');
 
 //end of for loop
