@@ -2,12 +2,12 @@
   "name": "data",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild": " node fs.js",
     "build": " node ejs.js",
-    "postbuild": " open build/macro.html",
+    "postbuild": "open http://localhost:3000 && node server.js",
     "deploy": "npm run publish && npm run production:start",
     "publish": " ",
     "production:start": " "
@@ -24,6 +24,8 @@
   "homepage": "https://github.com/ryanmcgranahan22/Maia-and-Ryan-s-Data-Journalism-Project#readme",
   "dependencies": {
     "ejs": "^3.1.6",
-    "jsdoc": "^3.6.7"
+    "express": "^4.17.1",
+    "jsdoc": "^3.6.7",
+    "save": "^2.4.0"
   }
 }

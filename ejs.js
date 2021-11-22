@@ -28,6 +28,6 @@ let macro_html = ejs.render(macro_template, {
   data: JSON.parse(data_info)
 });
 
-fs.writeFileSync('build/macro.html', macro_html, 'utf8');
+fs.writeFileSync('build/index.html', macro_html, 'utf8');
 
 //end of for loop
