@@ -24,6 +24,7 @@
   "homepage": "https://github.com/ryanmcgranahan22/Maia-and-Ryan-s-Data-Journalism-Project#readme",
   "dependencies": {
     "ejs": "^3.1.6",
-    "jsdoc": "^3.6.7"
+    "jsdoc": "^3.6.7",
+    "plotly.js-dist": "^2.6.3"
   }
 }

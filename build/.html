@@ -50,6 +50,24 @@
         <td>Unknown</td>
       </tr>
     </table>
+
+    <script>
+
+    var pie = [{
+      values: [5],
+      labels: ['State'],
+      type: 'pie'
+    }];
+
+    var layout = {
+      height: 300,
+      width: 300
+    };
+
+    Plotly.newPlot('myDiv', pie, layout);
+
+    </script>
+
   </section>
 
   <footer>

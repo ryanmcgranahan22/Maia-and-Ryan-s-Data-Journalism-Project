@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>MICRO TESTER</title>
+  <meta name="author" content="Maia and Ryan">
+  <meta content="text/html" http-equiv="Content-type" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body>
+  <header>
+    <h1>MICRO DATA</h1>
+  </header>
+  <section id="data info">
+    <table>
+      <tr>
+        <th>State</th>
+        <th>Total</th>
+        <th>Population</th>
+        <th>Ratio</th>
+        <th>Firearm</th>
+        <th>Cut/Pierce</th>
+        <th>Struck by/against</th>
+        <th>Poisoning</th>
+        <th>Hanging/Suffocation</th>
+        <th>Fall</th>
+        <th>Drowning</th>
+        <th>Fire/Burn</th>
+        <th>Motor vehicle</th>
+        <th>Other</th>
+        <th>Unknown</th>
+      </tr>
+      <tr>
+        <td>Indiana</td>
+        <td>1699</td>
+        <td>6691878</td>
+        <td>0.0002538898647</td>
+        <td>939</td>
+        <td>59</td>
+        <td>43</td>
+        <td>163</td>
+        <td>339</td>
+        <td></td>
+        <td></td>
+        <td>13</td>
+        <td>11</td>
+        <td></td>
+        <td>109</td>
+      </tr>
+    </table>
+
+    <script>
+
+    var pie = [{
+      values: [5],
+      labels: ['State'],
+      type: 'pie'
+    }];
+
+    var layout = {
+      height: 300,
+      width: 300
+    };
+
+    Plotly.newPlot('myDiv', pie, layout);
+
+    </script>
+
+  </section>
+
+  <footer>
+  This is my awesome, dynamically inserted footer! Data from <a href="https://www.kaggle.com/gulsahdemiryurek/harry-potter-dataset"> Kaggle - Harry Potter</a>
+</footer>
+
+</body>
+
+</html>

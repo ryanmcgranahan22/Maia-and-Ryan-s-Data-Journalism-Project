@@ -1,83 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <title><%= data.state %></title>
-  <link rel="stylesheet" href="../style.css">
-
+  <title>MICRO TESTER</title>
   <meta name="author" content="Maia and Ryan">
   <meta content="text/html" http-equiv="Content-type" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
-  <script src="https://d3js.org/d3.v7.min.js"></script>
-  <style>
-  path {
-        stroke: white;
-        stroke-width: 0.5px;
-        fill: black;
-    }
-    </style>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="https://d3js.org/topojson.v2.min.js"></script>
 </head>
 
 <body>
   <header>
-    <a href="../about.html">about page</a>
-    <a href="macro.html">macro data</a>
-
-
-    <h1><%= data.state %> DATA</h1>
-    <h2>This is the microdata for <%= data.state %> </h2>
+    <h1>MICRO DATA</h1>
   </header>
-  <p> insert map and pi chart </p>
-
   <section id="data info">
-    <table id="myTable">
+    <table>
       <tr>
-        <% for(let i in data){ %>
-          <%if(i !== "number"){%>
-          <td><%= i %></td>
-          <%}}%>
+        <th>State</th>
+        <th>Total</th>
+        <th>Population</th>
+        <th>Ratio</th>
+        <th>Firearm</th>
+        <th>Cut/Pierce</th>
+        <th>Struck by/against</th>
+        <th>Poisoning</th>
+        <th>Hanging/Suffocation</th>
+        <th>Fall</th>
+        <th>Drowning</th>
+        <th>Fire/Burn</th>
+        <th>Motor vehicle</th>
+        <th>Other</th>
+        <th>Unknown</th>
       </tr>
       <tr>
-        <% for(let i in data){ %>
-          <%if(i !== "number"){%>
-          <td><%= data[i] %></td>
-          <%}}%>
+        <td><%= data.state %></td>
+        <td><%= data.total %></td>
+        <td><%= data.population %></td>
+        <td><%= data.ratio %></td>
+        <td><%= data.firearm %></td>
+        <td><%= data.cutPierce %></td>
+        <td><%= data.struckByAgainst %></td>
+        <td><%= data.poisoning %></td>
+        <td><%= data.hangingSuffocation %></td>
+        <td><%= data.fall %></td>
+        <td><%= data.drowning %></td>
+        <td><%= data.fireBurn %></td>
+        <td><%= data.motorVehicle %></td>
+        <td><%= data.other %></td>
+        <td><%= data.unknown %></td>
       </tr>
     </table>
-    <div id="myDiv">
-    <script>
 
-for(var i=2;i<10;i++){
-    var pie = [{
-      values: [document.getElementById("myTable").rows[1].cells[4].innerHTML, document.getElementById("myTable").rows[1].cells[5].innerHTML, document.getElementById("myTable").rows[1].cells[6].innerHTML, document.getElementById("myTable").rows[1].cells[7].innerHTML,
-      document.getElementById("myTable").rows[1].cells[8].innerHTML],
-      labels: ['Firearm','Cut/Pierce','Struck by/against','Poisoning','Hanging/Suffocation','Fall','Drowning','Fire/Burn','Motor vehicle','Other','Unknown'],
+  <script>
+    let pie = [{
+      values: [5],
+      labels: ['State'],
       type: 'pie'
     }];
 
-    var layout = {
-      height: 400,
-      width: 500
+    let layout = {
+      height: 300,
+      width: 300
     };
 
-Plotly.newPlot('myDiv', pie, layout);
-}
+    Plotly.newPlot('myDiv', pie, layout);
 
     </script>
-  </div>
+
   </section>
-  <% let prev = "micro"+(data["number"]-1)+".html" %>
-  <% let next = "micro"+(data["number"]+1)+".html" %>
-  <% if(data["number"]>1){ %>
-  <a href=<%=prev%>>previous page</a>
-  <%}%>
-  <% if(data["number"]<40){ %>
-  <a href=<%=next%>>next page</a>
-  <%}%>
+
   <%- include ('global/footer');  %>
 
 </body>
