@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": " node fs.js",
+    "build": " node ejs.js",
+    "postbuild": " open build/macro.html",
+    "deploy": "npm run publish && npm run production:start",
+    "publish": " ",
+    "production:start": " "
   },
   "repository": {
     "type": "git",

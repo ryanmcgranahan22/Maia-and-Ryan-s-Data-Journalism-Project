@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Indiana</title>
+  <link rel="stylesheet" href="../style.css">
+
+  <meta name="author" content="Maia and Ryan">
+  <meta content="text/html" http-equiv="Content-type" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+  path {
+        stroke: white;
+        stroke-width: 0.5px;
+        fill: black;
+    }
+    </style>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="../about.html">about page</a>
+    <a href="macro.html">macro data</a>
+
+
+    <h1>Indiana DATA</h1>
+    <h2>This is the microdata for Indiana </h2>
+  </header>
+  <p> insert map and pi chart </p>
+
+  <section id="data info">
+    <table id="myTable">
+      <tr>
+        
+          
+          <td>state</td>
+          
+          
+          <td>total</td>
+          
+          
+          <td>population</td>
+          
+          
+          <td>ratio</td>
+          
+          
+          <td>firearm</td>
+          
+          
+          <td>cutPierce</td>
+          
+          
+          <td>struckByAgainst</td>
+          
+          
+          <td>poisoning</td>
+          
+          
+          <td>hangingSuffocation</td>
+          
+          
+          <td>fireBurn</td>
+          
+          
+          <td>motorVehicle</td>
+          
+          
+          <td>unknown</td>
+          
+          
+      </tr>
+      <tr>
+        
+          
+          <td>Indiana</td>
+          
+          
+          <td>1699</td>
+          
+          
+          <td>6691878</td>
+          
+          
+          <td>0.0002538898647</td>
+          
+          
+          <td>939</td>
+          
+          
+          <td>59</td>
+          
+          
+          <td>43</td>
+          
+          
+          <td>163</td>
+          
+          
+          <td>339</td>
+          
+          
+          <td>13</td>
+          
+          
+          <td>11</td>
+          
+          
+          <td>109</td>
+          
+          
+      </tr>
+    </table>
+    <div id="myDiv">
+    <script>
+
+for(var i=2;i<10;i++){
+    var pie = [{
+      values: [document.getElementById("myTable").rows[1].cells[4].innerHTML, document.getElementById("myTable").rows[1].cells[5].innerHTML, document.getElementById("myTable").rows[1].cells[6].innerHTML, document.getElementById("myTable").rows[1].cells[7].innerHTML,
+      document.getElementById("myTable").rows[1].cells[8].innerHTML],
+      labels: ['Firearm','Cut/Pierce','Struck by/against','Poisoning','Hanging/Suffocation','Fall','Drowning','Fire/Burn','Motor vehicle','Other','Unknown'],
+      type: 'pie'
+    }];
+
+    var layout = {
+      height: 400,
+      width: 500
+    };
+
+Plotly.newPlot('myDiv', pie, layout);
+}
+
+    </script>
+  </div>
+  </section>
+  
+  
+  
+  <a href=micro10.html>previous page</a>
+  
+  
+  <a href=micro12.html>next page</a>
+  
+  <footer>
+GO RYAN AND MAIA!!! (this is our footer)
+</footer>
+
+
+</body>
+
+</html>

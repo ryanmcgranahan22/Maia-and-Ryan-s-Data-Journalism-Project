@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>District of Columbia</title>
+  <link rel="stylesheet" href="../style.css">
+
+  <meta name="author" content="Maia and Ryan">
+  <meta content="text/html" http-equiv="Content-type" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+  path {
+        stroke: white;
+        stroke-width: 0.5px;
+        fill: black;
+    }
+    </style>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="../about.html">about page</a>
+    <a href="macro.html">macro data</a>
+
+
+    <h1>District of Columbia DATA</h1>
+    <h2>This is the microdata for District of Columbia </h2>
+  </header>
+  <p> insert map and pi chart </p>
+
+  <section id="data info">
+    <table id="myTable">
+      <tr>
+        
+          
+          <td>state</td>
+          
+          
+          <td>total</td>
+          
+          
+          <td>population</td>
+          
+          
+          <td>ratio</td>
+          
+          
+          <td>firearm</td>
+          
+          
+          <td>cutPierce</td>
+          
+          
+          <td>hangingSuffocation</td>
+          
+          
+      </tr>
+      <tr>
+        
+          
+          <td>District of Columbia</td>
+          
+          
+          <td>158</td>
+          
+          
+          <td>702455</td>
+          
+          
+          <td>0.0002249254401</td>
+          
+          
+          <td>100</td>
+          
+          
+          <td>15</td>
+          
+          
+          <td>25</td>
+          
+          
+      </tr>
+    </table>
+    <div id="myDiv">
+    <script>
+
+for(var i=2;i<10;i++){
+    var pie = [{
+      values: [document.getElementById("myTable").rows[1].cells[4].innerHTML, document.getElementById("myTable").rows[1].cells[5].innerHTML, document.getElementById("myTable").rows[1].cells[6].innerHTML, document.getElementById("myTable").rows[1].cells[7].innerHTML,
+      document.getElementById("myTable").rows[1].cells[8].innerHTML],
+      labels: ['Firearm','Cut/Pierce','Struck by/against','Poisoning','Hanging/Suffocation','Fall','Drowning','Fire/Burn','Motor vehicle','Other','Unknown'],
+      type: 'pie'
+    }];
+
+    var layout = {
+      height: 400,
+      width: 500
+    };
+
+Plotly.newPlot('myDiv', pie, layout);
+}
+
+    </script>
+  </div>
+  </section>
+  
+  
+  
+  <a href=micro7.html>previous page</a>
+  
+  
+  <a href=micro9.html>next page</a>
+  
+  <footer>
+GO RYAN AND MAIA!!! (this is our footer)
+</footer>
+
+
+</body>
+
+</html>
