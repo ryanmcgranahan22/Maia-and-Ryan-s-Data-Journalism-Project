@@ -5,8 +5,9 @@ let state_data = [];
 let states_csv = fs.readFileSync('data.csv', 'utf8');
 
 let states = states_csv.split("\r");
-
-states.forEach(function(state) {
+for (let i = 0; i < states.length; i++){
+  let state = states[i]
+//states.forEach(function(state) {
   let state_info = state.split(',');
   let data = {};
   if((state_info[0]!== "0")&&(state_info[0]!=="")){
@@ -40,6 +41,8 @@ states.forEach(function(state) {
   if((state_info[14]!== "0")&&(state_info[14]!=="")){
   data['unknown'] = state_info[14];}
   state_data.push(data);
-});
+  data['number']= i
+}
+//});
 
 fs.writeFileSync('compiled.json', JSON.stringify(state_data), 'utf8');

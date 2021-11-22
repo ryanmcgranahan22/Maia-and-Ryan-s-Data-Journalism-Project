@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>MICRO TESTER</title>
+  <title>Michigan</title>
+  <link rel="stylesheet" href="../style.css">
+
   <meta name="author" content="Maia and Ryan">
   <meta content="text/html" http-equiv="Content-type" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -22,68 +24,101 @@
 
 <body>
   <header>
+    <a href="../about.html">about page</a>
+    <a href="macro.html">macro data</a>
+
+
     <h1>Michigan DATA</h1>
     <h2>This is the microdata for Michigan </h2>
-
   </header>
+  <p> insert map and pi chart </p>
+
   <section id="data info">
     <table id="myTable">
       <tr>
         
+          
           <td>state</td>
+          
           
           <td>total</td>
           
+          
           <td>population</td>
+          
           
           <td>ratio</td>
           
+          
           <td>firearm</td>
+          
           
           <td>cutPierce</td>
           
+          
           <td>struckByAgainst</td>
+          
           
           <td>poisoning</td>
           
+          
           <td>hangingSuffocation</td>
+          
           
           <td>fall</td>
           
+          
           <td>drowning</td>
+          
           
           <td>fireBurn</td>
           
+          
           <td>motorVehicle</td>
+          
           
       </tr>
       <tr>
         
+          
           <td>Michigan</td>
+          
           
           <td>2612</td>
           
+          
           <td>9995915</td>
+          
           
           <td>0.0002613067438</td>
           
+          
           <td>1278</td>
+          
           
           <td>79</td>
           
+          
           <td>53</td>
+          
           
           <td>615</td>
           
+          
           <td>473</td>
+          
           
           <td>17</td>
           
+          
           <td>23</td>
+          
           
           <td>27</td>
           
+          
           <td>32</td>
+          
           
       </tr>
     </table>
@@ -92,7 +127,8 @@
 
 for(var i=2;i<10;i++){
     var pie = [{
-      values: [document.getElementById("myTable").rows[1].cells[4].innerHTML, document.getElementById("myTable").rows[1].cells[5].innerHTML, document.getElementById("myTable").rows[1].cells[6].innerHTML, document.getElementById("myTable").rows[1].cells[7].innerHTML],
+      values: [document.getElementById("myTable").rows[1].cells[4].innerHTML, document.getElementById("myTable").rows[1].cells[5].innerHTML, document.getElementById("myTable").rows[1].cells[6].innerHTML, document.getElementById("myTable").rows[1].cells[7].innerHTML,
+      document.getElementById("myTable").rows[1].cells[8].innerHTML],
       labels: ['Firearm','Cut/Pierce','Struck by/against','Poisoning','Hanging/Suffocation','Fall','Drowning','Fire/Burn','Motor vehicle','Other','Unknown'],
       type: 'pie'
     }];
@@ -105,53 +141,21 @@ for(var i=2;i<10;i++){
 Plotly.newPlot('myDiv', pie, layout);
 }
 
-const width = 900;
-const height = 600;
-const svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height);
-
-const projection = d3.geoAlbersUsa()
-    .translate([width / 2, height / 2]) // translate to center of screen
-    .scale([1000]); // scale things down so see entire US
-
-const path = d3.geoPath().projection(projection);
-
-d3.json("https://gist.githubusercontent.com/Bradleykingz/3aa5206b6819a3c38b5d73cb814ed470/raw/a476b9098ba0244718b496697c5b350460d32f99/us-states.json", function(error, uState) {
-if (error) throw error;
-    svg.selectAll('path')
-        .data(uState.features)
-        .enter()
-        .append('path')
-        .attr("d", path)
-
-        function selectDivisionNumber(array) {
-            let arraySize = array.length,
-                halfArray = Math.round(arraySize / 2);
-            let newArr = [];
-            //Take first and last item and push them to the array
-            newArr.push(array[0])
-            newArr.push(array[arraySize - 1]);
-            //Don't mind the order, they will be sorted later.
-            //Divide the array in two
-            let firstHalf = array.slice(0, halfArray);
-            let firstHalfSelection = firstHalf[Math.round(firstHalf.length / 2)];
-            newArr.push(firstHalfSelection);
-
-            let secondHalf = array.slice(halfArray, arraySize);
-            let secondHalfSelection = secondHalf[Math.round(secondHalf.length / 2)];
-            newArr.push(secondHalfSelection);
-            return newArr;
-        }
-});
-
     </script>
   </div>
   </section>
-
+  
+  
+  
+  <a href=micro18.html>previous page</a>
+  
+  
+  <a href=micro20.html>next page</a>
+  
   <footer>
-  This is my awesome, dynamically inserted footer! Data from <a href="https://www.kaggle.com/gulsahdemiryurek/harry-potter-dataset"> Kaggle - Harry Potter</a>
+GO RYAN AND MAIA!!! (this is our footer)
 </footer>
+
 
 </body>
 
