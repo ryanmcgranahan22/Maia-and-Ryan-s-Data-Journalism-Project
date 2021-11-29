@@ -83,12 +83,14 @@ Plotly.newPlot('myDiv', pie, layout);
 
 
   <% if(data[myPage].number>1){ %>
-  <a href=<%=prev%>>previous page</a>
+
+
+    <a class="btn btn-outline-info" href=<%=prev%> role="button">previous page</a>
   <%}%>
   <% if(data[myPage].number<40){ %>
-  <a href=<%=next%>>next page</a>
+    <a class="btn btn-outline-info" href=<%=next%> role="button">next page</a>
   <%}%>
-  
+
   <%- include ('global/footer');  %>
 
 
