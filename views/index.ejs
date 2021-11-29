@@ -3,82 +3,158 @@
 
 <head>
   <meta charset="utf-8" />
-  <title><%= data.state %></title>
-  <link rel="stylesheet" href="../style.css">
-
+  <title> MACRO DATA </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Maia and Ryan">
   <meta content="text/html" http-equiv="Content-type" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
-  <script src="https://d3js.org/d3.v7.min.js"></script>
-  <style>
-  path {
-        stroke: white;
-        stroke-width: 0.5px;
-        fill: black;
-    }
-    </style>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="https://d3js.org/topojson.v2.min.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/topojson.v2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.1/tinycolor.js"></script>
 </head>
 
 <body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Ryan and Maia's Website</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Micropages
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <% for(let i=1; i<data.length; i++){ %>
+              <% let num = "micro"+(data[i]["number"])+".html" %>
+              <li><a class="dropdown-item" href=<%=num%> ><%= data[i].state %></a></li>
+              <%}%>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
   <header>
-    <a href="about.html">about page</a>
-    <a href="index.html">macro data</a>
 
-
-    <h1><%= data.state %> DATA</h1>
-    <h2>This is the microdata for <%= data.state %> </h2>
+    <h1>MACRO DATA</h1>
+    <h2>This is our macro data </h2>
   </header>
-  <p> insert map and pi chart </p>
+
+<style>
+
+path {
+       stroke: white;
+       stroke-width: .5px;
+       fill: black;
+   }
+
+   .state {
+     fill: ;
+     cursor: pointer;
+   }
+
+</style>
+<div class="home"></div>
+
+<script>
+
+const width = 900;
+const height = 600;
+const svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+const projection = d3.geoAlbersUsa()
+    .translate([width / 2, height / 2]) // translate to center of screen
+    .scale([1000]); // scale things down so see entire US
+
+const path = d3.geoPath().projection(projection);
+
+d3.json("https://gist.githubusercontent.com/Bradleykingz/3aa5206b6819a3c38b5d73cb814ed470/raw/a476b9098ba0244718b496697c5b350460d32f99/us-states.json", function(error, uState) {
+if (error) throw error;
+svg.selectAll('path')
+   .data(uState.features)
+   .enter()
+   .append('path')
+   .attr("d", path)
+   .attr('class', 'state')
+});
+
+_(uState.features)
+    .keyBy('properties.name')
+    .merge(_.keyBy(response.data, 'State'))
+    .values()
+    .value();
+
+let max = d3.max(response.data, function (d, i) {
+    return d.unemploymentRate;
+});
+let min = d3.min(response.data, function (d, i) {
+    return d.unemploymentRate;
+});
+
+
+const colorScale = d3.scaleLinear()
+    .domain([min, max])
+     //I goofed, so this has to be in reverse order
+    .range(["#00806D", "#00BC4C", "#00F200", "#85FB44"].reverse());
+
+    let numbers= [2,3,9,12,20,15,25,4,31,6,7,12,18]
+    console.log(d3.min(numbers));
+    //2
+    console.log(d3.max(numbers))
+
+    svg.selectAll('path')
+        .data(uState.features)
+        .enter()
+        .append('path')
+        .attr("d", path)
+        .attr('class', 'state')
+        .style('fill', function (d, i) {
+            let uRate = d.unemploymentRate;
+            return uRate ? colorScale(uRate) : "#ccc";
+        })
+
+</script>
 
   <section id="data info">
-    <table id="myTable">
+    <table>
       <tr>
-        <% for(let i in data){ %>
-          <%if(i !== "number"){%>
-          <td><%= i %></td>
-          <%}}%>
+        <th>State</th>
+        <th>Percent</th>
+
+
       </tr>
-      <tr>
-        <% for(let i in data){ %>
-          <%if(i !== "number"){%>
-          <td><%= data[i] %></td>
-          <%}}%>
-      </tr>
+      <% for(let i=1; i<data.length; i++){ %>
+    <tr>
+      <% let num = "micro"+(data[i]["number"])+".html" %>
+      <td>  <a href=<%=num%>> <%= data[i].state %></a> </td>
+      <td><%= data[i].ratio %></td>
+    </tr>
+    <%}%>
+
     </table>
-    <div id="myDiv">
-    <script>
-
-for(var i=2;i<10;i++){
-    var pie = [{
-      values: [document.getElementById("myTable").rows[1].cells[4].innerHTML, document.getElementById("myTable").rows[1].cells[5].innerHTML, document.getElementById("myTable").rows[1].cells[6].innerHTML, document.getElementById("myTable").rows[1].cells[7].innerHTML,
-      document.getElementById("myTable").rows[1].cells[8].innerHTML],
-      labels: ['Firearm','Cut/Pierce','Struck by/against','Poisoning','Hanging/Suffocation','Fall','Drowning','Fire/Burn','Motor vehicle','Other','Unknown'],
-      type: 'pie'
-    }];
-
-    var layout = {
-      height: 400,
-      width: 500
-    };
-
-Plotly.newPlot('myDiv', pie, layout);
-}
-
-    </script>
-  </div>
   </section>
-  <% let prev = "micro"+(data["number"]-1)+".html" %>
-  <% let next = "micro"+(data["number"]+1)+".html" %>
-  <% if(data["number"]>1){ %>
-  <a href=<%=prev%>>previous page</a>
-  <%}%>
-  <% if(data["number"]<40){ %>
-  <a href=<%=next%>>next page</a>
-  <%}%>
-  <%- include ('global/footer');  %>
+
+    <%- include ('global/footer');  %>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 
 </body>
 
