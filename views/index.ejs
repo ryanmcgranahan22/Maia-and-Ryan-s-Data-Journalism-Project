@@ -9,10 +9,9 @@
   <meta name="author" content="Maia and Ryan">
   <meta content="text/html" http-equiv="Content-type" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <script src="https://d3js.org/d3.v4.min.js"></script>
-  <script src="https://d3js.org/topojson.v2.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.1/tinycolor.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="dist/jquery.vmap.js"></script>
+  <script type="text/javascript" src="dist/maps/jquery.vmap.usa.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -25,85 +24,73 @@
     <h2>This is our macro data </h2>
   </header>
 
-<style>
-
-path {
-       stroke: white;
-       stroke-width: .5px;
-       fill: black;
-   }
-
-   .state {
-     fill: ;
-     cursor: pointer;
-   }
-
-</style>
-<div class="home"></div>
+<div id="vmap" style="width: 600px; height: 400px;"></div>
 
 <script>
 
-const width = 900;
-const height = 600;
-const svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height);
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: 'gray',
+    selectedColor: null,
+    hoverColor: 'gray',
+    color: '#ffffff',
+    map: 'usa_en',
+    colors: {
+      al: 'hsl(2,100%,' + 2*(document.getElementById("myTable").rows[1].cells[1].innerHTML.substring(5,7)-10) + '%' +")",
+      ak: 'hsl(2,100%,' + 2*(document.getElementById("myTable").rows[2].cells[1].innerHTML.substring(5,7)-10) + '%' +")",
+      az: 'hsl(2,100%,' + 2*(document.getElementById("myTable").rows[3].cells[1].innerHTML.substring(5,7)-10) + '%' +")",
+      ca: 'hsl(2,100%,' + 2*(document.getElementById("myTable").rows[4].cells[1].innerHTML.substring(5,7)-10) + '%' +")",
+      co: 'hsl(2,100%,' + 2*(document.getElementById("myTable").rows[5].cells[1].innerHTML.substring(5,7)-10) + '%' +")",
+      ct: 'hsl(2,100%,' + 2*(document.getElementById("myTable").rows[6].cells[1].innerHTML.substring(5,7)-10) + '%' +")",
+      de: 'hsl(2,100%,' + 2*(document.getElementById("myTable").rows[7].cells[1].innerHTML.substring(5,7)-10) + '%' +")",
+      dc: 'hsl(2,100%,' + 2*(document.getElementById("myTable").rows[8].cells[1].innerHTML.substring(5,7)-10) + '%' +")",
+      ga: 'hsl(2,100%,' + 2*(document.getElementById("myTable").rows[9].cells[1].innerHTML.substring(5,7)-10) + '%' +")",
+      il: 'hsl(2,100%,' + document.getElementById("myTable").rows[10].cells[1].innerHTML.substring(5,7) + '%' +")",
+      in: 'hsl(2,100%,' + document.getElementById("myTable").rows[11].cells[1].innerHTML.substring(5,7) + '%' +")",
+      ia: 'hsl(2,100%,' + document.getElementById("myTable").rows[12].cells[1].innerHTML.substring(5,7) + '%' +")",
+      ks: 'hsl(2,100%,' + document.getElementById("myTable").rows[13].cells[1].innerHTML.substring(5,7) + '%' +")",
+      ky: 'hsl(2,100%,' + document.getElementById("myTable").rows[14].cells[1].innerHTML.substring(5,7) + '%' +")",
+      la: 'hsl(2,100%,' + document.getElementById("myTable").rows[15].cells[1].innerHTML.substring(5,7) + '%' +")",
+      me: 'hsl(2,100%,' + document.getElementById("myTable").rows[16].cells[1].innerHTML.substring(5,7) + '%' +")",
+      md: 'hsl(2,100%,' + document.getElementById("myTable").rows[17].cells[1].innerHTML.substring(5,7) + '%' +")",
+      ma: 'hsl(2,100%,' + document.getElementById("myTable").rows[18].cells[1].innerHTML.substring(5,7) + '%' +")",
+      mi: 'hsl(2,100%,' + document.getElementById("myTable").rows[19].cells[1].innerHTML.substring(5,7) + '%' +")",
+      mn: 'hsl(2,100%,' + document.getElementById("myTable").rows[20].cells[1].innerHTML.substring(5,7) + '%' +")",
+      mo: 'hsl(2,100%,' + document.getElementById("myTable").rows[21].cells[1].innerHTML.substring(5,7) + '%' +")",
+      ne: 'hsl(2,100%,' + document.getElementById("myTable").rows[22].cells[1].innerHTML.substring(5,7) + '%' +")",
+      nv: 'hsl(2,100%,' + document.getElementById("myTable").rows[23].cells[1].innerHTML.substring(5,7) + '%' +")",
+      nh: 'hsl(2,100%,' + document.getElementById("myTable").rows[24].cells[1].innerHTML.substring(5,7) + '%' +")",
+      nj: 'hsl(2,100%,' + document.getElementById("myTable").rows[25].cells[1].innerHTML.substring(5,7) + '%' +")",
+      nm: 'hsl(2,100%,' + document.getElementById("myTable").rows[26].cells[1].innerHTML.substring(5,7) + '%' +")",
+      ny: 'hsl(2,100%,' + document.getElementById("myTable").rows[27].cells[1].innerHTML.substring(5,7) + '%' +")",
+      nc: 'hsl(2,100%,' + document.getElementById("myTable").rows[28].cells[1].innerHTML.substring(5,7) + '%' +")",
+      oh: 'hsl(2,100%,' + document.getElementById("myTable").rows[29].cells[1].innerHTML.substring(5,7) + '%' +")",
+      ok: 'hsl(2,100%,' + document.getElementById("myTable").rows[30].cells[1].innerHTML.substring(5,7) + '%' +")",
+      or: 'hsl(2,100%,' + document.getElementById("myTable").rows[31].cells[1].innerHTML.substring(5,7) + '%' +")",
+      pa: 'hsl(2,100%,' + document.getElementById("myTable").rows[32].cells[1].innerHTML.substring(5,7) + '%' +")",
+      ri: 'hsl(2,100%,' + document.getElementById("myTable").rows[33].cells[1].innerHTML.substring(5,7) + '%' +")",
+      sc: 'hsl(2,100%,' + document.getElementById("myTable").rows[34].cells[1].innerHTML.substring(5,7) + '%' +")",
+      ut: 'hsl(2,100%,' + document.getElementById("myTable").rows[35].cells[1].innerHTML.substring(5,7) + '%' +")",
+      vt: 'hsl(2,100%,' + document.getElementById("myTable").rows[36].cells[1].innerHTML.substring(5,7) + '%' +")",
+      va: 'hsl(2,100%,' + document.getElementById("myTable").rows[37].cells[1].innerHTML.substring(5,7) + '%' +")",
+      wa: 'hsl(2,100%,' + document.getElementById("myTable").rows[38].cells[1].innerHTML.substring(5,7) + '%' +")",
+      wv: 'hsl(2,100%,' + document.getElementById("myTable").rows[39].cells[1].innerHTML.substring(5,7) + '%' +")",
+      wi: 'hsl(2,100%,' + document.getElementById("myTable").rows[40].cells[1].innerHTML.substring(5,7) + '%' +")"
 
-const projection = d3.geoAlbersUsa()
-    .translate([width / 2, height / 2]) // translate to center of screen
-    .scale([1000]); // scale things down so see entire US
 
-const path = d3.geoPath().projection(projection);
 
-d3.json("https://gist.githubusercontent.com/Bradleykingz/3aa5206b6819a3c38b5d73cb814ed470/raw/a476b9098ba0244718b496697c5b350460d32f99/us-states.json", function(error, uState) {
-if (error) throw error;
-svg.selectAll('path')
-   .data(uState.features)
-   .enter()
-   .append('path')
-   .attr("d", path)
-   .attr('class', 'state')
+    }
+  });
+
 });
 
-_(uState.features)
-    .keyBy('properties.name')
-    .merge(_.keyBy(response.data, 'State'))
-    .values()
-    .value();
 
-let max = d3.max(response.data, function (d, i) {
-    return d.unemploymentRate;
-});
-let min = d3.min(response.data, function (d, i) {
-    return d.unemploymentRate;
-});
-
-
-const colorScale = d3.scaleLinear()
-    .domain([min, max])
-     //I goofed, so this has to be in reverse order
-    .range(["#00806D", "#00BC4C", "#00F200", "#85FB44"].reverse());
-
-    let numbers= [2,3,9,12,20,15,25,4,31,6,7,12,18]
-    console.log(d3.min(numbers));
-    //2
-    console.log(d3.max(numbers))
-
-    svg.selectAll('path')
-        .data(uState.features)
-        .enter()
-        .append('path')
-        .attr("d", path)
-        .attr('class', 'state')
-        .style('fill', function (d, i) {
-            let uRate = d.unemploymentRate;
-            return uRate ? colorScale(uRate) : "#ccc";
-        })
 
 </script>
 
-  <section id="data info">
-    <table>
+<section id="data info">
+
+  <table id="myTable">
       <tr>
         <th>State</th>
         <th>Percent</th>
