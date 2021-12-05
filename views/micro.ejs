@@ -31,10 +31,35 @@
   <header>
 
 
-    <h1><%= data[myPage].state %> DATA</h1>
+    <h1><%= data[myPage].state %> Data </h1>
     <h2>This is the microdata for <%= data[myPage].state %> </h2>
   </header>
-  <p> insert map and pi chart </p>
+
+  <% let avg_rates = parseFloat(data[41].ratio)/40 %>
+  <%console.log(avg_rates) %>
+
+  <%let max = 0%>
+  <%let method%>
+
+
+  <% for(let i in data[myPage]){ %>
+    <%if (i !== "state"){%>
+      <%if (i !== "population"){%>
+        <%if (i !== "total"){%>
+          <%if (parseInt(data[myPage][i]) > max){%>
+            <%max = parseInt(data[myPage][i])%>
+            <%method = i%>
+    <%}}}}}%>
+    <%console.log(max,method) %>
+
+    <%if(method == "firearm"){%>
+      <p> the most common method of death by unnatural causes for <%= data[myPage].state %> is a <%=  method %>, which is also the most common method for all states. </p>
+    <%}%>
+    <%if(method !== "firearm"){%>
+      <p> the most common method of death by unnatural causes for <%= data[myPage].state %> is by <%=  method %> , which is interesting because the most common method for all states is a  firearm. </p>
+    <%}%>
+
+
 
 
 

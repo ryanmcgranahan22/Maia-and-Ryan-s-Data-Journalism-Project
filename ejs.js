@@ -15,7 +15,7 @@ let about_template = fs.readFileSync('views/about.ejs', 'utf8');
 
 
 
-for(let a = 1; a < JSON.parse(data_info).length; a++){
+for(let a = 1; a < JSON.parse(data_info).length-1; a++){
 
   let data1 = JSON.parse(data_info)
   data1["page"] = a

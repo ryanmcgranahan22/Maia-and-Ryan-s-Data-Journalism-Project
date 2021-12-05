@@ -25,8 +25,8 @@ for (let i = 0; i < states.length; i++){
   data['motorVehicle'] = state_info[12];
   data['other'] = state_info[13];
   data['unknown'] = state_info[14];
-  state_data.push(data);
   data['number']= i
+  state_data.push(data);
 }
 //});
 
