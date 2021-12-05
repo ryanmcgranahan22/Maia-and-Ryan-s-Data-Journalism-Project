@@ -81,12 +81,32 @@
   <div id="vmap" style="width: 600px; height: 400px;">
     <script>
 
-    let str = document.querySelector("h1").innerText
+  let str = document.querySelector("h1").innerText
 
-if(str == "Alabama DATA"){
+
+
+if(str == "Alabama Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
+        selectedColor: null,
+        color: '#a8a8a8',
+        map: 'usa_en',
+
+        borderWidth: 2,
+        borderColor: 'black',
+        hoverOpacity: .5,
+        colors: {
+          al: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+        }
+      });
+    });
+}
+
+if(str == "Alaska Data"){
+    jQuery(document).ready(function() {
+      jQuery('#vmap').vectorMap({
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -94,16 +114,16 @@ if(str == "Alabama DATA"){
         borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          al: "#ff5953"
+          ak: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "Alaska DATA"){
+if(str == "Arizona Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -111,16 +131,16 @@ if(str == "Alaska DATA"){
         borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          ak: '#e70800'
+          az: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "Arizona DATA"){
+if(str == "California Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -128,16 +148,16 @@ if(str == "Arizona DATA"){
         borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          az: '#ff6f6a'
+          ca: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "California DATA"){
+if(str == "Colorado Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -145,33 +165,16 @@ if(str == "California DATA"){
         borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          ca: '#ffcdcb'
+          co: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "Colorado DATA"){
+if(str == "Connecticut Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
-        selectedColor: null,
-        color: '#a8a8a8',
-        map: 'usa_en',
-        borderWidth: 2,
-        borderColor: 'black',
-        hoverOpacity: .5,
-        colors: {
-          co: '#ff6f6a'
-        }
-      });
-    });
-}
-
-if(str == "Connecticut DATA"){
-    jQuery(document).ready(function() {
-      jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -179,16 +182,16 @@ if(str == "Connecticut DATA"){
       borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          ct: '#ffd8d7'
+          ct: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "Delaware DATA"){
+if(str == "Delaware Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -196,16 +199,103 @@ if(str == "Delaware DATA"){
 borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          de: '#ffcdcb'
+          de: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "District of Columbia DATA"){
+if(str == "District of Columbia Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
+        selectedColor: null,
+        color: '#a8a8a8',
+        map: 'usa_en',
+        borderWidth: 2,
+        borderColor: 'black',
+        hoverOpacity: .5,
+        colors: {
+          dc: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+        }
+      });
+    });
+}
+
+if(str == "Georgia Data"){
+    jQuery(document).ready(function() {
+       jQuery('#vmap').vectorMap({
+        backgroundColor: '#FFFFFF',
+        selectedColor: null,
+        color: '#a8a8a8',
+        map: 'usa_en',
+        borderWidth: 2,
+        borderColor: 'black',
+        hoverOpacity: .5,
+        colors: {
+          ga: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+        }
+      });
+    });
+}
+
+
+
+if(str == "Illinois Data"){
+    jQuery(document).ready(function() {
+      jQuery('#vmap').vectorMap({
+        backgroundColor: '#FFFFFF',
+        selectedColor: null,
+        color: '#a8a8a8',
+        map: 'usa_en',
+        borderWidth: 2,
+        borderColor: 'black',
+        hoverOpacity: .5,
+        colors: {
+          il: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+        }
+      });
+    });
+}
+
+if(str == "Indiana Data"){
+    jQuery(document).ready(function() {
+      jQuery('#vmap').vectorMap({
+        backgroundColor: '#FFFFFF',
+        selectedColor: null,
+        color: '#a8a8a8',
+        map: 'usa_en',
+        borderWidth: 2,
+      borderColor: 'black',
+        hoverOpacity: .5,
+        colors: {
+          in: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+        }
+      });
+    });
+}
+
+if(str == "Iowa Data"){
+    jQuery(document).ready(function() {
+      jQuery('#vmap').vectorMap({
+        backgroundColor: '#FFFFFF',
+        selectedColor: null,
+        color: '#a8a8a8',
+        map: 'usa_en',
+        borderWidth: 2,
+      borderColor: 'black',
+        hoverOpacity: .5,
+        colors: {
+          ia: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+        }
+      });
+    });
+}
+
+if(str == "Kansas Data"){
+    jQuery(document).ready(function() {
+      jQuery('#vmap').vectorMap({
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -213,16 +303,16 @@ if(str == "District of Columbia DATA"){
     borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          dc: 'black'
+          ks: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "Georgia DATA"){
+if(str == "Kentucky Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -230,16 +320,33 @@ if(str == "Georgia DATA"){
       borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          ga: '#ff9793'
+          ky: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "Illinois DATA"){
+if(str == "Louisiana Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
+        selectedColor: null,
+        color: '#a8a8a8',
+        map: 'usa_en',
+        borderWidth: 2,
+      borderColor: 'black',
+        hoverOpacity: .5,
+        colors: {
+          la: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+        }
+      });
+    });
+}
+
+if(str == "Maine Data"){
+    jQuery(document).ready(function() {
+      jQuery('#vmap').vectorMap({
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -247,16 +354,50 @@ if(str == "Illinois DATA"){
         borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          il: '#ffb7b5'
+          me: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "Indiana DATA"){
+if(str == "Maryland Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
+        selectedColor: null,
+        color: '#a8a8a8',
+        map: 'usa_en',
+        borderWidth: 2,
+        borderColor: 'black',
+        hoverOpacity: .5,
+        colors: {
+          md: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+        }
+      });
+    });
+}
+
+if(str == "Massachusetts Data"){
+    jQuery(document).ready(function() {
+      jQuery('#vmap').vectorMap({
+        backgroundColor: '#FFFFFF',
+        selectedColor: null,
+        color: '#a8a8a8',
+        map: 'usa_en',
+        borderWidth: 2,
+        borderColor: 'black',
+        hoverOpacity: .5,
+        colors: {
+          ma: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+        }
+      });
+    });
+}
+
+if(str == "Michigan Data"){
+    jQuery(document).ready(function() {
+      jQuery('#vmap').vectorMap({
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -264,33 +405,33 @@ if(str == "Indiana DATA"){
       borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          in: '#ff8480'
+          mi: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "Iowa DATA"){
+if(str == "Minnesota Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
         borderWidth: 2,
-      borderColor: 'black',
+        borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          ia: '#ffb7b5'
+          mn: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "Kansas DATA"){
+if(str == "Missouri Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -298,16 +439,16 @@ if(str == "Kansas DATA"){
     borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          ks: '#ff8480'
+          mo:'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "Kentucky DATA"){
+if(str == "Nebraska Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -315,16 +456,84 @@ if(str == "Kentucky DATA"){
       borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          ky: '#ff8d89'
+          ne: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "Louisiana DATA"){
+if(str == "Nevada Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
+        selectedColor: null,
+        color: '#a8a8a8',
+        map: 'usa_en',
+        borderWidth: 2,
+        borderColor: 'black',
+        hoverOpacity: .5,
+        colors: {
+          nv: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+        }
+      });
+    });
+}
+
+if(str == "New Hampshire Data"){
+    jQuery(document).ready(function() {
+      jQuery('#vmap').vectorMap({
+        backgroundColor: '#FFFFFF',
+        selectedColor: null,
+        color: '#a8a8a8',
+        map: 'usa_en',
+        borderWidth: 2,
+        borderColor: 'black',
+        hoverOpacity: .5,
+        colors: {
+          nh: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+        }
+      });
+    });
+}
+
+if(str == "New Jersey Data"){
+    jQuery(document).ready(function() {
+      jQuery('#vmap').vectorMap({
+        backgroundColor: '#FFFFFF',
+        selectedColor: null,
+        color: '#a8a8a8',
+        map: 'usa_en',
+        borderWidth: 2,
+        borderColor: 'black',
+        hoverOpacity: .5,
+        colors: {
+          nj: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+        }
+      });
+    });
+}
+
+if(str == "New Mexico Data"){
+    jQuery(document).ready(function() {
+      jQuery('#vmap').vectorMap({
+        backgroundColor: '#FFFFFF',
+        selectedColor: null,
+        color: '#a8a8a8',
+        map: 'usa_en',
+        borderWidth: 2,
+        borderColor: 'black',
+        hoverOpacity: .5,
+        colors: {
+          nm: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+        }
+      });
+    });
+}
+
+if(str == "New York Data"){
+    jQuery(document).ready(function() {
+      jQuery('#vmap').vectorMap({
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -332,16 +541,16 @@ if(str == "Louisiana DATA"){
       borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          la: '#ff4d47'
+          ny: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "Maine DATA"){
+if(str == "North Carolina Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -349,16 +558,16 @@ if(str == "Maine DATA"){
         borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          me: '#ff9f9c'
+          nc: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "Maryland DATA"){
+if(str == "Ohio Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -366,16 +575,16 @@ if(str == "Maryland DATA"){
         borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          md: '#4e0300'
+          oh: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "Massachusetts DATA"){
+if(str == "Oklahoma Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -383,33 +592,16 @@ if(str == "Massachusetts DATA"){
         borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          ma: '#ffdedd'
+          ok: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "Michigan DATA"){
+if(str == "Oregon Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
-        selectedColor: null,
-        color: '#a8a8a8',
-        map: 'usa_en',
-        borderWidth: 2,
-      borderColor: 'black',
-        hoverOpacity: .5,
-        colors: {
-          mi: "#ff7a75"
-        }
-      });
-    });
-}
-
-if(str == "Minnesota DATA"){
-    jQuery(document).ready(function() {
-      jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -417,16 +609,16 @@ if(str == "Minnesota DATA"){
         borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          mn: '#ffd3d1'
+          or: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "Missouri DATA"){
+if(str == "Pennsylvania Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -434,16 +626,16 @@ if(str == "Missouri DATA"){
     borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          mo: '#ff423b'
+          pa: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "Nebraska DATA"){
+if(str == "Rhode Island Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -451,16 +643,16 @@ if(str == "Nebraska DATA"){
       borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          ne: '#ffcdcb'
+          ri: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "Nevada DATA"){
+if(str == "South Carolina Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -468,16 +660,16 @@ if(str == "Nevada DATA"){
         borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          nv: '#ff5953'
+          sc: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "New Hampshire DATA"){
+if(str == "Utah Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -485,16 +677,16 @@ if(str == "New Hampshire DATA"){
         borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          nh: "#ffa8a5"
+          ut: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "New Jersey DATA"){
+if(str == "Vermont Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -502,16 +694,16 @@ if(str == "New Jersey DATA"){
         borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          nj: '#ffe3e2'
+          vt: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "New Mexico DATA"){
+if(str == "Virginia Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -519,16 +711,33 @@ if(str == "New Mexico DATA"){
         borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          nm: '#ff1b13'
+          va: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "New York DATA"){
+if(str == "Washington Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
+        selectedColor: null,
+        color: '#a8a8a8',
+        map: 'usa_en',
+        borderWidth: 2,
+        borderColor: 'black',
+        hoverOpacity: .5,
+        colors: {
+          wa: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+        }
+      });
+    });
+}
+
+if(str == "West Virginia Data"){
+    jQuery(document).ready(function() {
+      jQuery('#vmap').vectorMap({
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -536,16 +745,16 @@ if(str == "New York DATA"){
       borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          ny: '#ffdedd'
+          wv: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
 }
 
-if(str == "North Carolina DATA"){
+if(str == "Wisconsin Data"){
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
+        backgroundColor: '#FFFFFF',
         selectedColor: null,
         color: '#a8a8a8',
         map: 'usa_en',
@@ -553,211 +762,7 @@ if(str == "North Carolina DATA"){
         borderColor: 'black',
         hoverOpacity: .5,
         colors: {
-          nc: '#ffa8a5'
-        }
-      });
-    });
-}
-
-if(str == "Ohio DATA"){
-    jQuery(document).ready(function() {
-      jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
-        selectedColor: null,
-        color: '#a8a8a8',
-        map: 'usa_en',
-        borderWidth: 2,
-        borderColor: 'black',
-        hoverOpacity: .5,
-        colors: {
-          oh: '#ff9793'
-        }
-      });
-    });
-}
-
-if(str == "Oklahoma DATA"){
-    jQuery(document).ready(function() {
-      jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
-        selectedColor: null,
-        color: '#a8a8a8',
-        map: 'usa_en',
-        borderWidth: 2,
-        borderColor: 'black',
-        hoverOpacity: .5,
-        colors: {
-          ok: '#ff645f'
-        }
-      });
-    });
-}
-
-if(str == "Oregon DATA"){
-    jQuery(document).ready(function() {
-      jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
-        selectedColor: null,
-        color: '#a8a8a8',
-        map: 'usa_en',
-        borderWidth: 2,
-        borderColor: 'black',
-        hoverOpacity: .5,
-        colors: {
-          or: '#ff9793'
-        }
-      });
-    });
-}
-
-if(str == "Pennsylvania DATA"){
-    jQuery(document).ready(function() {
-      jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
-        selectedColor: null,
-        color: '#a8a8a8',
-        map: 'usa_en',
-        borderWidth: 2,
-    borderColor: 'black',
-        hoverOpacity: .5,
-        colors: {
-          pa: '#ff9793'
-        }
-      });
-    });
-}
-
-if(str == "Rhode Island DATA"){
-    jQuery(document).ready(function() {
-      jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
-        selectedColor: null,
-        color: '#a8a8a8',
-        map: 'usa_en',
-        borderWidth: 2,
-      borderColor: 'black',
-        hoverOpacity: .5,
-        colors: {
-          ri: '#ffe3e2'
-        }
-      });
-    });
-}
-
-if(str == "South Carolina DATA"){
-    jQuery(document).ready(function() {
-      jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
-        selectedColor: null,
-        color: '#a8a8a8',
-        map: 'usa_en',
-        borderWidth: 2,
-        borderColor: 'black',
-        hoverOpacity: .5,
-        colors: {
-          sc: '#ff8d89'
-        }
-      });
-    });
-}
-
-if(str == "Utah DATA"){
-    jQuery(document).ready(function() {
-      jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
-        selectedColor: null,
-        color: '#a8a8a8',
-        map: 'usa_en',
-        borderWidth: 2,
-        borderColor: 'black',
-        hoverOpacity: .5,
-        colors: {
-          ut: '#ff8d89'
-        }
-      });
-    });
-}
-
-if(str == "Vermont DATA"){
-    jQuery(document).ready(function() {
-      jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
-        selectedColor: null,
-        color: '#a8a8a8',
-        map: 'usa_en',
-        borderWidth: 2,
-        borderColor: 'black',
-        hoverOpacity: .5,
-        colors: {
-          vt: '#ff7a75'
-        }
-      });
-    });
-}
-
-if(str == "Virginia DATA"){
-    jQuery(document).ready(function() {
-      jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
-        selectedColor: null,
-        color: '#a8a8a8',
-        map: 'usa_en',
-        borderWidth: 2,
-        borderColor: 'black',
-        hoverOpacity: .5,
-        colors: {
-          va: '#ffb7b5'
-        }
-      });
-    });
-}
-
-if(str == "Washington DATA"){
-    jQuery(document).ready(function() {
-      jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
-        selectedColor: null,
-        color: '#a8a8a8',
-        map: 'usa_en',
-        borderWidth: 2,
-        borderColor: 'black',
-        hoverOpacity: .5,
-        colors: {
-          wa: '#ffb0ad'
-        }
-      });
-    });
-}
-
-if(str == "West Virginia DATA"){
-    jQuery(document).ready(function() {
-      jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
-        selectedColor: null,
-        color: '#a8a8a8',
-        map: 'usa_en',
-        borderWidth: 2,
-      borderColor: 'black',
-        hoverOpacity: .5,
-        colors: {
-          wv: '#ff4e47'
-        }
-      });
-    });
-}
-
-if(str == "Wisconsin DATA"){
-    jQuery(document).ready(function() {
-      jQuery('#vmap').vectorMap({
-        backgroundColor: '#5c5c5c',
-        selectedColor: null,
-        color: '#a8a8a8',
-        map: 'usa_en',
-        borderWidth: 2,
-      borderColor: 'black',
-        hoverOpacity: .5,
-        colors: {
-          wi: '#ffb7b5'
+          wi: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
         }
       });
     });
