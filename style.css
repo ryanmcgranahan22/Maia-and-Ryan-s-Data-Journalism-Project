@@ -78,7 +78,8 @@ ul{
   margin-left: 300px;
 }
 #gradient-micro{
-  margin-left: 70px;
+  margin-top: -100px;
+  margin-left: 300px;
 }
 
 #vmap {
@@ -93,17 +94,6 @@ ul{
 }
 #footer-micro{
   margin-top: -475px;
-}
-
-
-
-
-th, td{
-  text-align: center;
-  padding: 5px;
-  border: 1px solid black;
-  margin-left: 25px;
-  margin-top: 10px;
 }
 
 #microtable{
