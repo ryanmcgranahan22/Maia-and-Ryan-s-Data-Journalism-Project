@@ -78,7 +78,8 @@ ul{
   margin-left: 300px;
 }
 #gradient-micro{
-  margin-left: 70px;
+  margin-top: -100px;
+  margin-left: 300px;
 }
 
 #vmap {
@@ -96,20 +97,6 @@ ul{
 #footer{
   margin-top: -200px;
 }
-#footer-micro{
-  margin-top: -200px;
-}
-
-
-
-
-th, td{
-  text-align: center;
-  padding: 5px;
-  border: 1px solid black;
-  margin-left: 25px;
-  margin-top: 10px;
-}
 
 #microtable{
 font-size:.5px;
@@ -120,9 +107,9 @@ visibility: hidden;
 #myTable{
   text-align: center;
   padding: 5px;
-  border: 1px solid black;
-  margin-left: 500px;
   margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -130,10 +117,6 @@ visibility: hidden;
   margin-left: 100px;
 }
 
-#button{
-  left: 500px;
-  top: -1000px;
-}
 
 
 
@@ -141,4 +124,18 @@ visibility: hidden;
   background-color: pink;
   border-color: grey;
   border-radius: 2px;
+}
+
+#button{
+text-align : right;
+margin-right: 100px;
+margin-top: 10px;
+
+
+}
+
+
+#footer-micro{
+  margin-top: -200px;
+
 }

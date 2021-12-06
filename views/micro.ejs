@@ -28,12 +28,29 @@
 
   <% let myPage = data["page"] %>
 
+  <% let prev = "micro"+(data[myPage].number-1)+".html" %>
+  <% let next = "micro"+(data[myPage].number+1)+".html" %>
+  <% console.log(prev) %>
+
+<div id="button">
+  <% if(data[myPage].number>1){ %>
+
+    <a class="btn btn-outline-danger" href=<%=prev%> role="button">previous page</a>
+  <%}%>
+  <% if(data[myPage].number<40){ %>
+    <a class="btn btn-outline-danger" href=<%=next%> role="button">next page</a>
+  <%}%>
+</div>
+
+
   <header>
 
     <h1>What states are safest?</h1>
     <h2><%= data[myPage].state %> Data </h2>
 
   </header>
+
+
 
   <% let avg_rates = parseFloat(data[41].ratio)/40 %>
 
@@ -98,25 +115,14 @@
     <%- include ('global/micromap');  %>
   </div>
   <div id="gradient-micro">
- <img src="pictures/key.png" alt="key" width="auto" height="300" style = "position:relative; left:850px; top:-850px;">
+ <img src="pictures/key.png" alt="key" width="auto" height="300" style = "position:relative; left:600px; top:-750px;">
 </div>
 </div>
 
 
-  <% let prev = "micro"+(data[myPage].number-1)+".html" %>
-  <% let next = "micro"+(data[myPage].number+1)+".html" %>
-  <% console.log(prev) %>
 
 
-  <% if(data[myPage].number>1){ %>
 
-<div id="button">
-    <a class="btn btn-outline-danger" style = "position:relative;  top:-500px;" href=<%=prev%> role="button">previous page</a>
-  <%}%>
-  <% if(data[myPage].number<40){ %>
-    <a class="btn btn-outline-danger" style = "position:relative;  top:-500px;"href=<%=next%> role="button">next page</a>
-  <%}%>
-</div>
 <div id = "footer-micro">
   <%- include ('global/footer');  %>
 </div>
