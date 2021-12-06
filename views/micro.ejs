@@ -52,17 +52,17 @@
     <%console.log(max,method) %>
 
     <%if(method == "firearm"){%>
-      <p> The most common method of death by unnatural causes for <%= data[myPage].state %> is a <%=  method %>, which is also the most common method for all states. </p>
+      <p> The most common method of death by unnatural causes for <%= data[myPage].state %> is a <%=  method %>, which is also the most common method (aka macroaverage) for all states. </p>
     <%}%>
     <%if(method !== "firearm"){%>
-      <p> The most common method of death by unnatural causes for <%= data[myPage].state %> is by <%=  method %> , which is interesting because the most common method for all states is a  firearm. </p>
+      <p> The most common method of death by unnatural causes for <%= data[myPage].state %> is by <%=  method %> , which is interesting because the most common method (aka macroaverage)for all states is a  firearm. </p>
     <%}%>
 
     <%if(data[myPage].ratio < avg_rates){%>
-      <p> <%= data[myPage].state %> has a lower rate of death by unnatural causes than the national average of 0.0235 % with a deaths: population ratio of  <%=data[myPage].ratio %>: 1 </p>
+      <p> <%= data[myPage].state %> has a lower rate of death by unnatural causes than the national average (aka macroaverage) of 0.0235 % with a deaths: population ratio of  <%=data[myPage].ratio %>: 1. This means that it is one of the SAFEST states!!</p>
       <%}%>
       <%if(data[myPage].ratio >= avg_rates){%>
-        <p> <%= data[myPage].state %> has a greater rate of death by unnatural causes than the national average of 0.0235 % with a deaths: population ratio of  <%=data[myPage].ratio %>: 1 </p>
+        <p> <%= data[myPage].state %> has a greater rate of death by unnatural causes than the national average (aka macroaverage) of 0.0235 % with a deaths: population ratio of  <%=data[myPage].ratio %>: 1. Unfortunately, this means it is NOT a very SAFE stae. </p>
         <%}%>
 
 
