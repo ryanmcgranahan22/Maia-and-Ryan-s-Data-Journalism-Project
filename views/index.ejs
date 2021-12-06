@@ -60,7 +60,7 @@
 
 
       </tr>
-      <% for(let i=1; i<data.length; i++){ %>
+      <% for(let i=1; i<data.length-1; i++){ %>
     <tr>
       <% let num = "micro"+(data[i]["number"])+".html" %>
       <td>  <a href=<%=num%>> <%= data[i].state %></a> </td>

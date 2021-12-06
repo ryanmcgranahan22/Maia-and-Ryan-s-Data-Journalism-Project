@@ -17,7 +17,7 @@
           Micropages
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <% for(let i=1; i<data.length-1; i++){ %>
+          <% for(let i=1; i<data.length-2; i++){ %>
             <% let num = "micro"+(data[i]["number"])+".html" %>
             <li><a class="dropdown-item" href=<%=num%> ><%= data[i].state %></a></li>
             <%}%>
