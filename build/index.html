@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title> MACRO DATA </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" type = "text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Maia and Ryan">
+  <meta content="text/html" http-equiv="Content-type" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="dist/jquery.vmap.js"></script>
+  <script type="text/javascript" src="dist/maps/jquery.vmap.usa.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid">
+  <a class="navbar-brand" href="index.html">SafeStates</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Micropages
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          
+            
+            <li><a class="dropdown-item" href=micro1.html >Alabama</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro2.html >Alaska</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro3.html >Arizona</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro4.html >California</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro5.html >Colorado</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro6.html >Connecticut</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro7.html >Delaware</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro8.html >District of Columbia</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro9.html >Georgia</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro10.html >Illinois</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro11.html >Indiana</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro12.html >Iowa</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro13.html >Kansas</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro14.html >Kentucky</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro15.html >Louisiana</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro16.html >Maine</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro17.html >Maryland</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro18.html >Massachusetts</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro19.html >Michigan</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro20.html >Minnesota</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro21.html >Missouri</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro22.html >Nebraska</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro23.html >Nevada</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro24.html >New Hampshire</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro25.html >New Jersey</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro26.html >New Mexico</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro27.html >New York</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro28.html >North Carolina</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro29.html >Ohio</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro30.html >Oklahoma</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro31.html >Oregon</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro32.html >Pennsylvania</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro33.html >Rhode Island</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro34.html >South Carolina</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro35.html >Utah</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro36.html >Vermont</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro37.html >Virginia</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro38.html >Washington</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro39.html >West Virginia</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro40.html >Wisconsin</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro41.html >TOTAL</a></li>
+            
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+  <header>
+
+    <h1>What states are safest?</h1>
+    <div id="opening">
+    <p>In our project, we explored deaths by causes such as guns, stabs, poisonings, and suffocatio (aka deaths by unnatural causes) in order to understand in which states you are least likely to meet an untimely death.
+      The map below depicts the ratio of deaths by unnatural causes: population for each state, with darker colores being higher ratios.
+      Note that Maryland has the highest "ratio" of deaths to population and that Rhode Island has the lowest ratio</p>
+    </div>
+    <ul>
+
+    <li> We found it really interesting that New York had such a low ratio. This was because even though it had a relatively high number of deaths compared to other states, the deaths were balanced out by its large populatoion.
+    We wonder if this lower death rate has to do with gun control, as unlike most states, guns were not the most common method of death in New York. </li>
+    <br>
+    <li>  It is also interesting that Maryland has such a high death rate, specifically from poisonings. Upon further research, this is due to lead poisoning, and Maryland is making laws to help prevent future deaths. </li>
+    <br>
+    <li> It makes sense that Rhode Island has such a low ratio as we believe it is known to be a pretty safe place </li>
+</ul>
+  <div id="click">  <p> Click a state for a more detailed summary! </p> </div>
+
+  </header>
+
+<div id="vmap" style="width: 600px; height: 400px;" >
+<script>
+
+let index = [
+  'Alabama',       'Alaska',
+  'Arizona',       'California',
+  'Colorado',      'Connecticut',
+  'Delaware',      'District of Columbia',
+  'Georgia',       'Illinois',
+  'Indiana',       'Iowa',
+  'Kansas',        'Kentucky',
+  'Louisiana',     'Maine',
+  'Maryland',      'Massachusetts',
+  'Michigan',      'Minnesota',
+  'Missouri',      'Nebraska',
+  'Nevada',        'New Hampshire',
+  'New Jersey',    'New Mexico',
+  'New York',      'North Carolina',
+  'Ohio',          'Oklahoma',
+  'Oregon',        'Pennsylvania',
+  'Rhode Island',  'South Carolina',
+  'Utah',          'Vermont',
+  'Virginia',      'Washington',
+  'West Virginia', 'Wisconsin',
+]
+
+
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    onRegionClick: function(event, code, region){
+      for (let state of index){
+        if (region == state){
+          let link = "micro"+ (index.indexOf(region)+1)+".html"
+          window.location.href = link
+
+        }
+      }
+
+     },
+    colors: {
+      al: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[1].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      ak: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[2].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      az: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[3].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      ca: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[4].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      co: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[5].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      ct: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[6].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      de: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[7].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      dc: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[8].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      ga: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[9].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      il: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[10].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      in: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[11].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      ia: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[12].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      ks: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[13].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      ky: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[14].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      la: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[15].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      me: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[16].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      md: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[17].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      ma: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[18].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      mi: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[19].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      mn: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[20].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      mo: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[21].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      ne: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[22].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      nv: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[23].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      nh: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[24].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      nj: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[25].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      nm: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[26].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      ny: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[27].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      nc: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[28].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      oh: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[29].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      ok: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[30].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      or: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[31].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      pa: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[32].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      ri: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[33].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      sc: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[34].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      ut: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[35].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      vt: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[36].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      va: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[37].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      wa: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[38].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      wv: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[39].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+      wi: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("myTable").rows[40].cells[1].innerHTML.substring(5,7),2)/25) + '%' +")",
+    }
+  });
+
+});
+
+
+</script>
+
+
+</div>
+<div id="gradient">
+<img src="pictures/key.png" alt="key" width="auto" height="300" style = "position:relative; left:600px; top:-350px;">
+</div>
+<div id="footer">
+
+
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    We recieved our data from <a href="https://wisqars.cdc.gov/nvdrs/">  cdc.gov </a> With it, we explored deaths by unnatural causes on both a national and state level.
+
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+
+<section id="data info">
+
+  <table id="myTable">
+      <tr>
+        <th>State</th>
+        <th>Ratio</th>
+
+
+      </tr>
+      
+    <tr>
+      
+      <td>  <a href=micro1.html> Alabama</a> </td>
+
+      <td>0.0002907196201</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro2.html> Alaska</a> </td>
+
+      <td>0.0003783368907</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro3.html> Arizona</a> </td>
+
+      <td>0.0002753900569</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro4.html> California</a> </td>
+
+      <td>0.0001649642904</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro5.html> Colorado</a> </td>
+
+      <td>0.000279866928</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro6.html> Connecticut</a> </td>
+
+      <td>0.0001449898045</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro7.html> Delaware</a> </td>
+
+      <td>0.0001674988187</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro8.html> District of Columbia</a> </td>
+
+      <td>0.0002249254401</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro9.html> Georgia</a> </td>
+
+      <td>0.0002399359284</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro10.html> Illinois</a> </td>
+
+      <td>0.0001962998751</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro11.html> Indiana</a> </td>
+
+      <td>0.0002538898647</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro12.html> Iowa</a> </td>
+
+      <td>0.0001948579676</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro13.html> Kansas</a> </td>
+
+      <td>0.0002534771536</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro14.html> Kentucky</a> </td>
+
+      <td>0.0002495299214</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro15.html> Louisiana</a> </td>
+
+      <td>0.0003010743828</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro16.html> Maine</a> </td>
+
+      <td>0.0002241475668</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro17.html> Maryland</a> </td>
+
+      <td>0.0004656844817</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro18.html> Massachusetts</a> </td>
+
+      <td>0.0001316981132</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro19.html> Michigan</a> </td>
+
+      <td>0.0002613067438</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro20.html> Minnesota</a> </td>
+
+      <td>0.0001541565507</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro21.html> Missouri</a> </td>
+
+      <td>0.0003143744536</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro22.html> Nebraska</a> </td>
+
+      <td>0.0001606827045</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro23.html> Nevada</a> </td>
+
+      <td>0.0002995657779</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro24.html> New Hampshire</a> </td>
+
+      <td>0.0002167409533</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro25.html> New Jersey</a> </td>
+
+      <td>0.0001225792837</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro26.html> New Mexico</a> </td>
+
+      <td>0.0003436052205</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro27.html> New York</a> </td>
+
+      <td>0.0001327383204</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro28.html> North Carolina</a> </td>
+
+      <td>0.0002141834928</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro29.html> Ohio</a> </td>
+
+      <td>0.0002361960477</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro30.html> Oklahoma</a> </td>
+
+      <td>0.000282520335</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro31.html> Oregon</a> </td>
+
+      <td>0.0002367138957</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro32.html> Pennsylvania</a> </td>
+
+      <td>0.0002332589438</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro33.html> Rhode Island</a> </td>
+
+      <td>0.0001295734951</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro34.html> South Carolina</a> </td>
+
+      <td>0.0002492069927</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro35.html> Utah</a> </td>
+
+      <td>0.000247065504</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro36.html> Vermont</a> </td>
+
+      <td>0.0002602590775</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro37.html> Virginia</a> </td>
+
+      <td>0.0001950060374</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro38.html> Washington</a> </td>
+
+      <td>0.0002083446408</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro39.html> West Virginia</a> </td>
+
+      <td>0.0003029074687</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro40.html> Wisconsin</a> </td>
+
+      <td>0.0001926527736</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro41.html> TOTAL</a> </td>
+
+      <td>0.009430925818</td>
+    </tr>
+    
+    <tr>
+      
+      <td>  <a href=micro42.html> </a> </td>
+
+      <td></td>
+    </tr>
+    
+
+    </table>
+  </section>
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

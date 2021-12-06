@@ -1,0 +1,1144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title> microdata</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" type = "text/css" href="style.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Maia and Ryan">
+  <meta content="text/html" http-equiv="Content-type" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="dist/jquery.vmap.js"></script>
+  <script type="text/javascript" src="dist/maps/jquery.vmap.usa.js" charset="utf-8"></script>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid">
+  <a class="navbar-brand" href="index.html">SafeStates</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Micropages
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          
+            
+            <li><a class="dropdown-item" href=micro1.html >Alabama</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro2.html >Alaska</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro3.html >Arizona</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro4.html >California</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro5.html >Colorado</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro6.html >Connecticut</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro7.html >Delaware</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro8.html >District of Columbia</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro9.html >Georgia</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro10.html >Illinois</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro11.html >Indiana</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro12.html >Iowa</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro13.html >Kansas</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro14.html >Kentucky</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro15.html >Louisiana</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro16.html >Maine</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro17.html >Maryland</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro18.html >Massachusetts</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro19.html >Michigan</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro20.html >Minnesota</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro21.html >Missouri</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro22.html >Nebraska</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro23.html >Nevada</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro24.html >New Hampshire</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro25.html >New Jersey</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro26.html >New Mexico</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro27.html >New York</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro28.html >North Carolina</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro29.html >Ohio</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro30.html >Oklahoma</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro31.html >Oregon</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro32.html >Pennsylvania</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro33.html >Rhode Island</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro34.html >South Carolina</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro35.html >Utah</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro36.html >Vermont</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro37.html >Virginia</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro38.html >Washington</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro39.html >West Virginia</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro40.html >Wisconsin</a></li>
+            
+            
+            <li><a class="dropdown-item" href=micro41.html >TOTAL</a></li>
+            
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+  
+
+  <header>
+
+    <h1>What states are safest?</h1>
+    <h2>Georgia Data </h2>
+
+  </header>
+
+  
+
+  
+  
+
+  
+    
+    
+      
+        
+    
+      
+    
+      
+        
+          
+    
+      
+        
+          
+            
+            
+    
+    
+      
+        
+          
+    
+      
+        
+          
+    
+      
+        
+          
+    
+      
+        
+          
+    
+      
+        
+          
+    
+      
+        
+          
+    
+      
+        
+          
+    
+      
+        
+          
+    
+      
+        
+          
+    
+      
+        
+          
+    
+      
+        
+          
+
+    <div id="desc">
+    <p> This is the "microdata" for Georgia. Here you will find a visualization of the state's death:population ratio as well as a pie chart detailing the methods of death.  </p>
+    <p> Georgia has a total population of 10519475 </p>
+
+
+    
+      <p> The most common method of death by unnatural causes for Georgia is a firearm, which is also the most common method (aka macroaverage) for all states. </p>
+    
+    
+
+    
+      
+        <p> Georgia has a greater rate of death by unnatural causes than the national average (aka macroaverage) of 0.0235 % with a deaths: population ratio of  0.0002399359284: 1 . Unfortunately, this means it is NOT a very SAFE state with 102 % the average deaths. </p>
+        
+</div>
+
+
+
+
+  <section id="data info">
+    <table id="microtable">
+      <tr>
+        
+          
+          <td>state</td>
+          
+          
+          <td>total</td>
+          
+          
+          <td>population</td>
+          
+          
+          <td>ratio</td>
+          
+          
+          <td>firearm</td>
+          
+          
+          <td>cutPierce</td>
+          
+          
+          <td>struckByAgainst</td>
+          
+          
+          <td>poisoning</td>
+          
+          
+          <td>hangingSuffocation</td>
+          
+          
+          <td>fall</td>
+          
+          
+          <td>drowning</td>
+          
+          
+          <td>fireBurn</td>
+          
+          
+          <td>motorVehicle</td>
+          
+          
+          <td>other</td>
+          
+          
+          <td>unknown</td>
+          
+          
+      </tr>
+      <tr>
+        
+          
+          <td>Georgia</td>
+          
+          
+          <td>2524</td>
+          
+          
+          <td>10519475</td>
+          
+          
+          <td>0.0002399359284</td>
+          
+          
+          <td>1646</td>
+          
+          
+          <td>76</td>
+          
+          
+          <td>45</td>
+          
+          
+          <td>182</td>
+          
+          
+          <td>356</td>
+          
+          
+          <td>26</td>
+          
+          
+          <td>15</td>
+          
+          
+          <td>11</td>
+          
+          
+          <td>27</td>
+          
+          
+          <td></td>
+          
+          
+          <td>140</td>
+          
+          
+      </tr>
+
+    </table>
+    <br>
+
+
+  </section>
+
+  <div id="vmap" style="width: 600px; height: 400px; left:-270px;" >
+    <script>
+
+let str = document.querySelector("h2").innerText
+
+if(str == "Alabama Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      al: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Alaska Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      ak: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Arizona Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      az: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "California Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      ca: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Colorado Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      co: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Connecticut Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+  borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      ct: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Delaware Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      de: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "District of Columbia Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      dc: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Georgia Data"){
+jQuery(document).ready(function() {
+   jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      ga: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+
+
+if(str == "Illinois Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      il: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Indiana Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+  borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      in: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Iowa Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+  borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      ia: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Kansas Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      ks: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Kentucky Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+  borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      ky: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Louisiana Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+  borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      la: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Maine Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      me: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Maryland Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      md: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Massachusetts Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      ma: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Michigan Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+  borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      mi: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Minnesota Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      mn: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Missouri Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      mo:'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Nebraska Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+  borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      ne: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Nevada Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      nv: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "New Hampshire Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      nh: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "New Jersey Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      nj: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "New Mexico Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      nm: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "New York Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+  borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      ny: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "North Carolina Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      nc: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Ohio Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      oh: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Oklahoma Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      ok: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Oregon Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      or: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Pennsylvania Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      pa: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Rhode Island Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+  borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      ri: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "South Carolina Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      sc: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Utah Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      ut: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Vermont Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      vt: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Virginia Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      va: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Washington Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      wa: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "West Virginia Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+  borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      wv: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+if(str == "Wisconsin Data"){
+jQuery(document).ready(function() {
+  jQuery('#vmap').vectorMap({
+    backgroundColor: '#FFFFFF',
+    selectedColor: null,
+    color: '#a8a8a8',
+    map: 'usa_en',
+    borderWidth: 2,
+    borderColor: 'black',
+    hoverOpacity: .5,
+    colors: {
+      wi: 'hsl(2,100%,' + (100 - Math.pow(document.getElementById("microtable").rows[1].cells[3].innerHTML.substring(5,7),2)/25) + '%' +")"
+    }
+  });
+});
+}
+
+</script>
+</div>
+<div id="myDiv" style = "position:relative; left:700px; top:-400px;">
+<script>
+
+  var ultimateColors =
+    ['rgb(191, 54, 54)', 'rgb(46, 0, 0)' ,'rgb(168, 0, 0)', 'rgb(255, 0, 0)','rgb(158, 27, 27)', 'rgb(207, 62, 62)', 'rgb(214, 99, 99)', 'rgb(184, 112, 112)', 'rgb(212, 146, 146)', 'rgb(227, 179, 179)',  'rgb(240, 221, 221)'
+    ]
+;
+
+for(var i=2;i<10;i++){
+var pie = [{
+  values: [document.getElementById("microtable").rows[1].cells[4].innerHTML, document.getElementById("microtable").rows[1].cells[5].innerHTML, document.getElementById("microtable").rows[1].cells[6].innerHTML, document.getElementById("microtable").rows[1].cells[7].innerHTML,
+  document.getElementById("microtable").rows[1].cells[8].innerHTML, document.getElementById("microtable").rows[1].cells[9].innerHTML, document.getElementById("microtable").rows[1].cells[10].innerHTML, document.getElementById("microtable").rows[1].cells[11].innerHTML,
+  document.getElementById("microtable").rows[1].cells[12].innerHTML, document.getElementById("microtable").rows[1].cells[13].innerHTML, document.getElementById("microtable").rows[1].cells[14].innerHTML],
+  labels: ['Firearm','Cut/Pierce','Struck by/against','Poisoning','Hanging/Suffocation','Fall','Drowning','Fire/Burn','Motor vehicle','Other','Unknown'],
+  type: 'pie',
+  marker: {
+     colors: ultimateColors
+   },
+ }];
+
+var layout = {
+  height: 400,
+  width: 500
+};
+
+Plotly.newPlot('myDiv', pie, layout);
+}
+
+
+
+</script>
+</div>
+
+  </div>
+  <div id="gradient-micro">
+ <img src="pictures/key.png" alt="key" width="auto" height="300" style = "position:relative; left:600px; top:-750px;">
+</div>
+
+
+  
+  
+  
+
+
+  
+
+<div id="button">
+    <a class="btn btn-outline-danger" style = "position:relative;  top:-500px;" href=micro8.html role="button">previous page</a>
+  
+  
+    <a class="btn btn-outline-danger" style = "position:relative;  top:-500px;"href=micro10.html role="button">next page</a>
+  
+</div>
+<div id = "footer-micro">
+  
+
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    We recieved our data from <a href="https://wisqars.cdc.gov/nvdrs/">  cdc.gov </a> With it, we explored deaths by unnatural causes on both a national and state level.
+
+  </div>
+  <!-- Copyright -->
+</footer>
+
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
