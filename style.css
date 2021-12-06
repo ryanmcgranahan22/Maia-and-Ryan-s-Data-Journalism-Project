@@ -1,11 +1,22 @@
 body{
   background-color: ;
+  font-family: Georgia;
 }
 
 h1{
   margin-left: 10px;
-  margin-top: 30px
-  color: black;
+  margin-top: 30px;
+  color: red;
+  font-family: Verdana;
+  font-weight: bold;
+
+}
+
+h2 {
+  margin-left: 25px;
+  margin-right: 100px;
+  margin-top: 10px;
+  color: grey;
 }
 
 h3{
@@ -32,6 +43,14 @@ h4{
   margin-bottom: 10px;
 }
 
+p{
+  margin-left: 30px;
+}
+
+#desc{
+  margin-left: 30px;
+  margin-right: 30px;
+}
 #definition, #eval{
   margin-left: 30px;
   margin-right: 100px;
@@ -59,6 +78,9 @@ ul{
 #gradient{
   margin-left: 300px;
 }
+#gradient-micro{
+  margin-left: 70px;
+}
 
 #vmap {
   margin-top: 30px;
@@ -66,14 +88,45 @@ ul{
   margin-left: 300px;
 }
 
+
 #footer{
   margin-top: -200px;
 }
+#footer-micro{
+  margin-top: -475px;
+}
 
-#myTable, th, td{
+
+
+
+th, td{
+  text-align: center;
+  padding: 5px;
+  border: 1px solid black;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+#microtable{
+font-size:.5px;
+visibility: hidden;
+}
+
+
+#myTable{
   text-align: center;
   padding: 5px;
   border: 1px solid black;
   margin-left: 500px;
   margin-top: 10px;
+}
+
+
+#myDiv{
+  margin-left: 100px;
+}
+
+#button{
+  margin-top: -120px;
+  margin-left: 25px;
 }
