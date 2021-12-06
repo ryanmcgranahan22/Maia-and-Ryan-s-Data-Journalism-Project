@@ -36,7 +36,6 @@
   </header>
 
   <% let avg_rates = parseFloat(data[41].ratio)/40 %>
-  <%console.log(avg_rates) %>
 
   <%let max = 0%>
   <%let method%>
@@ -49,7 +48,6 @@
             <%max = parseInt(data[myPage][i])%>
             <%method = i%>
     <%}}}}}%>
-    <%console.log(max,method) %>
 
     <div id="desc">
     <p> This is the "microdata" for <%= data[myPage].state %>. Here you will find a visualization of the state's death:population ratio as well as a pie chart detailing the methods of death.  </p>
