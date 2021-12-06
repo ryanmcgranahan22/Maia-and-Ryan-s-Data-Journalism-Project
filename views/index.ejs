@@ -22,17 +22,21 @@
   <header>
 
     <h1>What states are safest?</h1>
+    <div id="opening">
     <p>In our project, we explored deaths by causes such as guns, stabs, poisonings, and suffocatio (aka deaths by unnatural causes) in order to understand in which states you are least likely to meet an untimely death.
       The map below depicts the ratio of deaths by unnatural causes: population for each state, with darker colores being higher ratios.
       Note that Maryland has the highest "ratio" of deaths to population and that Rhode Island has the lowest ratio</p>
+    </div>
     <ul>
 
     <li> We found it really interesting that New York had such a low ratio. This was because even though it had a relatively high number of deaths compared to other states, the deaths were balanced out by its large populatoion.
     We wonder if this lower death rate has to do with gun control, as unlike most states, guns were not the most common method of death in New York. </li>
+    <br>
     <li>  It is also interesting that Maryland has such a high death rate, specifically from poisonings. Upon further research, this is due to lead poisoning, and Maryland is making laws to help prevent future deaths. </li>
+    <br>
     <li> It makes sense that Rhode Island has such a low ratio as we believe it is known to be a pretty safe place </li>
 </ul>
-    <p> Click a state for a more detailed summary! </p>
+  <div id="click">  <p> Click a state for a more detailed summary! </p> </div>
 
   </header>
 
@@ -40,12 +44,11 @@
 <%- include ('global/macromap');  %>
 
 </div>
-
+<div id="gradient">
 <img src="pictures/key.png" alt="key" width="auto" height="300" style = "position:relative; left:600px; top:-350px;">
-
+</div>
+<div id="footer">
 <%- include ('global/footer');  %>
-
-
 
 
 <section id="data info">
@@ -68,7 +71,7 @@
 
     </table>
   </section>
-
+</div>
 
 
 

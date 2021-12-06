@@ -12,6 +12,7 @@
 
   <h1> About Page</h1>
   <h3> Useful Definitions </h3>
+  <div id="definition">
   <p>
     death by unnatural causes: an untimely teast brought about by methods other than natural, bodily causes such as sickness or old age
     <br>
@@ -25,13 +26,16 @@
     <br>
 
   </p>
+</div>
   <br>
 
   <h3> Lo-Fi Wireframe Sketches + Analysis </h3>
 
-  <img src="pictures/maia_1.jpeg" alt="maia main" width="400" height="auto">
-  <h4> Maia's Macro Sketch </h4>
 
+  <h4> Maia's Macro Sketch </h4>
+  <div id="img">
+<img src="pictures/maia_1.jpeg" alt="maia main" width="400" height="auto">
+</div>
   <ol>
     <li>UNDERSTANDABILITY: This map is very understandable. It is clear that a darker color means a higher percentage of violent deaths in that location. The key adds to this understandability. The map doesn’t show, though, anything about the
       mechanism used. This is only found in the individual state section. I think this is okay, though, because it helps not overwhelm the reader. In addition, the summery at the top will clear up any confusion.
@@ -47,9 +51,11 @@
       user with too much information (for example showing percentage and mechanism)
     </li>
   </ol>
-  <img src="pictures/maia_2.jpeg" alt="maia mini" width="400" height="auto">
-  <h4> Maia's Micro Sketch </h4>
 
+  <h4> Maia's Micro Sketch </h4>
+  <div id="img">
+<img src="pictures/maia_2.jpeg" alt="maia mini" width="400" height="auto">
+</div>
   <ol>
     <li>UNDERSTANDABILITY: The pie chart is understandable, showing that bigger pieces of the pie relate to a higher percentage of that weapon used. The key makes the pie chart explicitly understandable as well by labeling the colors. In addition,
       the sentence at the top of the page adds to this understandability. It might be interesting to try to contextualize this pie chart by comparing it to the frequency of violent deaths in the state as a whole to make the data more understandable.
@@ -64,9 +70,11 @@
       same colors as the US map to show that stuff corresponds, but also the blue might work as the US map is about number of deaths while this chart is about type of death.
     </li>
   </ol>
-  <img src="pictures/ryan_1.jpeg" alt="ryan main" width="400" height="auto">
-  <h4> Ryan's Macro Sketch </h4>
 
+  <h4> Ryan's Macro Sketch </h4>
+  <div id="img">
+<img src="pictures/ryan_1.jpeg" alt="ryan main" width="400" height="auto">
+</div>
   <ol>
     <li>UNDERSTANDABILITY: Hard to know what colors would mean. Definitely need a key to show what color represents what mechanism. Might not be that interesting because for most states, the most popular mechanism was a gun. The fact that the data
       differs by location, though, is understandable due to the map. The data is all pretty visible and consistent.
@@ -81,9 +89,11 @@
       color the map with different shades of the same color
     </li>
   </ol>
-  <img src="pictures/ryan_2.jpeg" alt="ryan mini" width="400" height="auto">
-  <h4> Ryan's Micro Sketch </h4>
 
+  <h4> Ryan's Micro Sketch </h4>
+  <div id="img">
+<img src="pictures/ryan_2.jpeg" alt="ryan mini" width="400" height="auto">
+</div>
   <ol>
     <li>UNDERSTANDABILITY: The use of both a colored map and a table seem really beneficial here. The map contextualizes the violent deaths in this location. It is hard to understand, though, what this color may represent so a key would be useful.
       The table gives more data, allowing for a more interesting infographic than just a colored in state. All data is visible and you don’t need to click anything to access important info. The colors here are not consistent with the colors on the
@@ -102,7 +112,9 @@
   <br>
   <h3> Final Design Elements </h3>
   <p>
+    <div id="eval">
     Based off of the evaluations above, we have decided to include the folliwng elements in our final design:
+  </div>
   <h4> Macro Design </h4>
   <ol>
     <li> The map from Maia's sketch because using shades instead of colors allows for accessability/perceptibility for colorblind people.
@@ -144,9 +156,10 @@
           Ryan will focus on map/chart generation and css
         </li>
       </ul>
-      <img src="pictures/chart.png" alt="pipeline graphic" width="200" height="auto">
+
 
       <h4> Pipeline Steps </h4>
+      <img src="pictures/chart.png" alt="pipeline graphic" width="200" height="auto">
       <ol>
         <li> create fs.js to turn data into a json. </li>
         <li> use ejs.js to create a macropage with all the data </li>
