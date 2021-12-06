@@ -108,10 +108,10 @@
   <% if(data[myPage].number>1){ %>
 
 
-    <a class="btn btn-outline-info" style = "position:relative;  top:-500px;" href=<%=prev%> role="button">previous page</a>
+    <a class="btn btn-outline-danger" style = "position:relative;  top:-500px;" href=<%=prev%> role="button">previous page</a>
   <%}%>
   <% if(data[myPage].number<40){ %>
-    <a class="btn btn-outline-info" style = "position:relative;  top:-500px;"href=<%=next%> role="button">next page</a>
+    <a class="btn btn-outline-danger" style = "position:relative;  top:-500px;"href=<%=next%> role="button">next page</a>
   <%}%>
 
   <%- include ('global/footer');  %>
