@@ -135,14 +135,32 @@
 
       <br>
       <h3> Project Pipeline </h3>
-    <p>
       <h4> Division of Labor </h4>
-      <ol>
+      <ul>
         <li>
-        Seeing as the project can be divided into three main parts: the macropage, the micropages, and the navbar, we currently believe an ideal way to distribute our work on these components is if Ryan focuses on the macropage, Maia focuses on the micropages, and together we collaborate on the navbar.
+          Maia will focus on page generation, data analysis, and bootstrap.
         </li>
+        <li>
+          Ryan will focus on map/chart generation and css
+        </li>
+      </ul>
+      <img src="pictures/chart.png" alt="pipeline graphic" width="200" height="auto">
+
+      <h4> Pipeline Steps </h4>
+      <ol>
+        <li> create fs.js to turn data into a json. </li>
+        <li> use ejs.js to create a macropage with all the data </li>
+        <li> use a for loop in ejs.js to create micropages using ejs.js </li>
+        <li> create tables on both the macro/micro pages showing the relavent data for that page </li>
+        <li> add a header using bootstrap to link all the pages to each other</li>
+        <li> add "previous" and "next" buttons to the micropages to link them together</li>
+        <li> add the diagrams to each page using plotly and jquery</li>
+        <li> add dynamic descriptions to each page that use variables from the data</li>
+        <li> use css to make it pretty </li>
+
       </ol>
-    </p>
+
+
     <%- include ('global/footer');  %>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

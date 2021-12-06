@@ -30,9 +30,9 @@
 
   <header>
 
+    <h1>What states are safest?</h1>
+    <h2><%= data[myPage].state %> Data </h2>
 
-    <h1><%= data[myPage].state %> Data </h1>
-    <h2>This is the microdata for <%= data[myPage].state %> </h2>
   </header>
 
   <% let avg_rates = parseFloat(data[41].ratio)/40 %>
@@ -51,6 +51,9 @@
     <%}}}}}%>
     <%console.log(max,method) %>
 
+    <p> This is the "microdata" for <%= data[myPage].state %>. Here you will find a visualization of the state's death:population ratio as well as a pie chart detailing the methods of death.  </p>
+
+
     <%if(method == "firearm"){%>
       <p> The most common method of death by unnatural causes for <%= data[myPage].state %> is a <%=  method %>, which is also the most common method (aka macroaverage) for all states. </p>
     <%}%>
@@ -59,10 +62,10 @@
     <%}%>
 
     <%if(data[myPage].ratio < avg_rates){%>
-      <p> <%= data[myPage].state %> has a lower rate of death by unnatural causes than the national average (aka macroaverage) of 0.0235 % with a deaths: population ratio of  <%=data[myPage].ratio %>: 1. This means that it is one of the SAFEST states!!</p>
+      <p> <%= data[myPage].state %> has a lower rate of death by unnatural causes than the national average (aka macroaverage) of 0.0235 % with a deaths: population ratio of  <%=data[myPage].ratio %>: 1 . The difference between the rates is This means that it is one of the SAFEST states with only <%=Math.round((100*data[myPage].ratio)/avg_rates)%> % the average deaths!!</p>
       <%}%>
       <%if(data[myPage].ratio >= avg_rates){%>
-        <p> <%= data[myPage].state %> has a greater rate of death by unnatural causes than the national average (aka macroaverage) of 0.0235 % with a deaths: population ratio of  <%=data[myPage].ratio %>: 1. Unfortunately, this means it is NOT a very SAFE stae. </p>
+        <p> <%= data[myPage].state %> has a greater rate of death by unnatural causes than the national average (aka macroaverage) of 0.0235 % with a deaths: population ratio of  <%=data[myPage].ratio %>: 1 . Unfortunately, this means it is NOT a very SAFE state with <%=Math.round((100*data[myPage].ratio)/avg_rates)%> % the average deaths. </p>
         <%}%>
 
 
