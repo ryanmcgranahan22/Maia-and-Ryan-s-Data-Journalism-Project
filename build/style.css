@@ -1,6 +1,10 @@
 body{
-  background-color: ;
+  background-color: #e9edf2;
   font-family: Georgia;
+}
+
+#head{
+  margin-top: -48px;
 }
 
 h1{
@@ -47,6 +51,7 @@ p{
 }
 
 #desc{
+  margin-top: 10px;
   margin-left: 30px;
   margin-right: 30px;
 }
@@ -83,9 +88,14 @@ ul{
 }
 
 #vmap {
+  width: 600px;
+  height: 400px;
+  background-color: null;
   margin-top: 30px;
   margin-bottom: 0px;
   margin-left: 300px;
+  border-width: 2px;
+  border-color: red;
 }
 
 #maps{
@@ -114,14 +124,19 @@ visibility: hidden;
 
 
 #myDiv{
-  margin-left: 100px;
+  background-color: #d1d5d9;
+  margin-left: 350px;
+}
+
+#navbar{
+  background-color: #d1d5d9;
+  box-shadow: 0px 5px 2px grey;
 }
 
 
-
-
 #definition{
-  background-color: pink;
+  padding: 5px;
+  background-color: #e9edf2;
   border-color: grey;
   border-radius: 2px;
 }
@@ -134,6 +149,13 @@ margin-top: 10px;
 
 }
 
+#user-select-none{
+  background-color: black;
+}
+
+#svg-container{
+    background-color: black;
+}
 
 #footer-micro{
   margin-top: -200px;

@@ -23,8 +23,8 @@
 </head>
 
 <body>
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div id="navbar">
+  <nav class="navbar navbar-expand-lg navbar-light">
 <div class="container-fluid">
   <a class="navbar-brand" href="index.html">SafeStates</a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -174,7 +174,7 @@
 </div>
 </nav>
 
-
+</div>
   
 
   
@@ -193,8 +193,9 @@
 
 
   <header>
-
+<div id="head">
     <h1>What states are safest?</h1>
+    </div>
     <h2>California Data </h2>
 
   </header>
@@ -395,8 +396,8 @@
 
   </section>
 
-<div id = "maps">
-  <div id="vmap" style="width: 600px; height: 400px; left:-270px;" >
+
+  <div id="vmap">
     <script>
 
 let str = document.querySelector("h2").innerText
@@ -404,11 +405,10 @@ let str = document.querySelector("h2").innerText
 if(str == "Alabama Data"){
 jQuery(document).ready(function() {
   jQuery('#vmap').vectorMap({
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#d1d5d9',
     selectedColor: null,
     color: '#a8a8a8',
     map: 'usa_en',
-
     borderWidth: 2,
     borderColor: 'black',
     hoverOpacity: .5,
@@ -422,7 +422,7 @@ jQuery(document).ready(function() {
 if(str == "Alaska Data"){
 jQuery(document).ready(function() {
   jQuery('#vmap').vectorMap({
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#d1d5d9',
     selectedColor: null,
     color: '#a8a8a8',
     map: 'usa_en',
@@ -439,7 +439,7 @@ jQuery(document).ready(function() {
 if(str == "Arizona Data"){
 jQuery(document).ready(function() {
   jQuery('#vmap').vectorMap({
-    backgroundColor: '#FFFFFF',
+  backgroundColor: '#d1d5d9',
     selectedColor: null,
     color: '#a8a8a8',
     map: 'usa_en',
@@ -456,7 +456,7 @@ jQuery(document).ready(function() {
 if(str == "California Data"){
 jQuery(document).ready(function() {
   jQuery('#vmap').vectorMap({
-    backgroundColor: '#FFFFFF',
+  backgroundColor: '#d1d5d9',
     selectedColor: null,
     color: '#a8a8a8',
     map: 'usa_en',
@@ -473,7 +473,7 @@ jQuery(document).ready(function() {
 if(str == "Colorado Data"){
 jQuery(document).ready(function() {
   jQuery('#vmap').vectorMap({
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#d1d5d9',
     selectedColor: null,
     color: '#a8a8a8',
     map: 'usa_en',
@@ -1123,7 +1123,7 @@ Plotly.newPlot('myDiv', pie, layout);
   <div id="gradient-micro">
  <img src="pictures/key.png" alt="key" width="auto" height="300" style = "position:relative; left:600px; top:-750px;">
 </div>
-</div>
+
 
 
 

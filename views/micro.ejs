@@ -23,9 +23,9 @@
 </head>
 
 <body>
-
+<div id="navbar">
   <%- include ('global/header');  %>
-
+</div>
   <% let myPage = data["page"] %>
 
   <% let prev = "micro"+(data[myPage].number-1)+".html" %>
@@ -44,8 +44,9 @@
 
 
   <header>
-
+<div id="head">
     <h1>What states are safest?</h1>
+    </div>
     <h2><%= data[myPage].state %> Data </h2>
 
   </header>
@@ -110,14 +111,14 @@
 
   </section>
 
-<div id = "maps">
-  <div id="vmap" style="width: 600px; height: 400px; left:-270px;" >
+
+  <div id="vmap">
     <%- include ('global/micromap');  %>
   </div>
   <div id="gradient-micro">
  <img src="pictures/key.png" alt="key" width="auto" height="300" style = "position:relative; left:600px; top:-750px;">
 </div>
-</div>
+
 
 
 
