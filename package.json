@@ -8,9 +8,9 @@
     "prebuild": " node fs.js",
     "build": " node ejs.js  && cp -R dist build && cp -R  pictures build && cp style.css build ",
     "postbuild": "open http://localhost:3000 && node server.js",
-    "deploy": "npm run publish && npm run production: start",
-    "publish": " ",
-    "production:start": " "
+    "deploy": "npm run publish && npm run production:start",
+    "publish": "cp -R build ../maiaposternack22.github.io && cd ../ && cd maiaposternack22.github.io git add . && git commit -m 'update' && git push -u origin main ",
+    "production:start": "open https://maiaposternack22.github.io/build/index.html"
   },
   "repository": {
     "type": "git",
