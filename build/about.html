@@ -1,6 +1,9 @@
 <html>
 
 <head>
+
+  <title> About </title>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type = "text/css" href="style.css">
 
@@ -151,9 +154,6 @@
             
             <li><a class="dropdown-item" href=micro40.html >Wisconsin</a></li>
             
-            
-            <li><a class="dropdown-item" href=micro41.html >TOTAL</a></li>
-            
         </ul>
       </li>
     </ul>
@@ -185,7 +185,11 @@
 </div>
   <br>
 
+
   <h3> Lo-Fi Wireframe Sketches + Analysis </h3>
+
+  <div id="sketch">
+
 
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" width="400" height="auto">
     <ol class="carousel-indicators">
@@ -195,7 +199,7 @@
     </ol>
     <div class="carousel-inner" width="400" height="auto">
         <div class="carousel-item active" width="400" height="auto" >
-            <img class="d-block" src="pictures/maia_1.jpeg" alt="Maia Main" width="auto" height="400">
+            <img class="d-block" src="pictures/maia_1.jpeg" alt="Maia Main" width="auto" height="400" id = "sktch">
             <div class="carousel-caption d-none d-md-block">
             </div>
 
@@ -218,7 +222,7 @@
                 </ol>
         </div>
         <div class="carousel-item" width="400" height="auto">
-          <img class="d-block " src="pictures/maia_2.jpeg" alt="Maia Micro" width="auto" height="400">
+          <img class="d-block " src="pictures/maia_2.jpeg" alt="Maia Micro" width="auto" height="400" id = "sktch">
           <div class="carousel-caption d-none d-md-block">
           </div>
 
@@ -241,7 +245,7 @@
 
         </div>
         <div class="carousel-item" width="400" height="auto">
-          <img class="d-block " src="pictures/ryan_1.jpeg" alt="Ryan Main" width="auto" height="400">
+          <img class="d-block " src="pictures/ryan_1.jpeg" alt="Ryan Main" width="auto" height="400" id = "sktch">
           <div class="carousel-caption d-none d-md-block">
           </div>
 
@@ -263,7 +267,7 @@
       </div>
 
         <div class="carousel-item" width="400" height="auto">
-          <img class="d-block " src="pictures/ryan_2.jpeg" alt="Ryan Micro" width="auto" height="400">
+          <img class="d-block " src="pictures/ryan_2.jpeg" alt="Ryan Micro" width="auto" height="400" id = "sktch">
           <div class="carousel-caption d-none d-md-block">
           </div>
 
@@ -294,8 +298,15 @@
     </a>
 </div>
 
+</div>
+</div>
+
+
+
   <br>
   <h3> Final Design Elements </h3>
+
+  <div id = "design">
   <p>
     <div id="eval">
     Based off of the evaluations above, we have decided to include the folliwng elements in our final design:
@@ -330,8 +341,12 @@
   </ol>
       </p>
 
+    </div>
+
       <br>
       <h3> Project Pipeline </h3>
+
+      <div id = "pipeline">
       <h4> Division of Labor </h4>
       <ul>
         <li>
@@ -344,8 +359,8 @@
 
 
       <h4> Pipeline Steps </h4>
-      <img src="pictures/chart.png" alt="pipeline graphic" width="200" height="auto">
-      <ol>
+      <img src="pictures/chart.png" alt="pipeline graphic" width="200" height="auto" id = "pipe">
+      <ol id = "pipe_desc">
         <li> create fs.js to turn data into a json. </li>
         <li> use ejs.js to create a macropage with all the data </li>
         <li> use a for loop in ejs.js to create micropages using ejs.js </li>
@@ -357,6 +372,8 @@
         <li> use css to make it pretty </li>
 
       </ol>
+
+    </div>
 
 
     

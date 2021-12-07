@@ -10,7 +10,7 @@
   <meta name="author" content="Maia and Ryan">
   <meta content="text/html" http-equiv="Content-type" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="dist/jquery.vmap.js"></script>
   <script type="text/javascript" src="dist/maps/jquery.vmap.usa.js" charset="utf-8"></script>
 </head>
@@ -157,9 +157,6 @@
             
             <li><a class="dropdown-item" href=micro40.html >Wisconsin</a></li>
             
-            
-            <li><a class="dropdown-item" href=micro41.html >TOTAL</a></li>
-            
         </ul>
       </li>
     </ul>
@@ -220,11 +217,12 @@ jQuery(document).ready(function() {
   jQuery('#vmap').vectorMap({
     backgroundColor: '#d1d5d9',
     selectedColor: null,
-    color: '#a8a8a8',
+    color: '#e9edf2',
     map: 'usa_en',
     borderWidth: 2,
     borderColor: 'black',
     hoverOpacity: .5,
+    hoverValue: "hi", 
     onRegionClick: function(event, code, region){
       for (let state of index){
         if (region == state){
@@ -600,13 +598,6 @@ jQuery(document).ready(function() {
       <td>  <a href=micro41.html> TOTAL</a> </td>
 
       <td>0.009430925818</td>
-    </tr>
-    
-    <tr>
-      
-      <td>  <a href=micro42.html> </a> </td>
-
-      <td></td>
     </tr>
     
 
