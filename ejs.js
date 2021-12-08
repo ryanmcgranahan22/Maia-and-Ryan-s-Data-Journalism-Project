@@ -13,7 +13,7 @@ let about_template = fs.readFileSync('views/about.ejs', 'utf8');
 }*/
 //console.log(JSON.parse(data_info)[1])
 
-
+//hi
 
 for(let a = 1; a < JSON.parse(data_info).length-1; a++){
 
